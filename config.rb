@@ -1,6 +1,6 @@
 require 'compass/import-once/activate'
 require 'sass-globbing'
-require 'compass-normalize'
+require 'compass'
 require 'susy'
 # Require any additional compass plugins here.
 
