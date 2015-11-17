@@ -1,14 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>JDLtechworks SMACSS</title>
-	<link rel="stylesheet" href="css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>JDLtechworks SMACSS</title>
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-<div>
-	<div class="inner"><h1>Hellow world!</h1></div>
-	<p>Nullam sit amet velit eu nisl viverra accumsan. In ut eros nulla. Phasellus fringilla tortor ac tellus elementum, a auctor orci imperdiet. Donec mollis finibus est, vel aliquet augue. Sed pulvinar interdum arcu ac laoreet. Quisque laoreet ultrices elit, id commodo urna fringilla ut. Maecenas vitae condimentum erat. Curabitur feugiat, metus vel sodales tincidunt, tellus urna faucibus tortor, ut iaculis ipsum lorem vel tellus. Pellentesque mattis, augue non placerat ornare, massa odio bibendum erat, a accumsan orci nunc quis dui. Aenean vel urna quis quam finibus dapibus.</p>
+<div class="page">
+  <div class="page-inner">
+    <header class="header">
+      <div class="inner">
+        <nav class="navbar">
+          <div class="navbar--brand">
+            <a href="#"><img src="img/logo.svg" alt="JDLtechworks Logo"></a>
+          </div>
+          <div class="navbar--menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Programming</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="highlighted">
+      <div class="inner">
+        <div class="hero-unit landing">
+          <h1>Pellentesque id lacinia ex. Cras viverra, arcu vel. </h1>
+          <h2>Phasellus non massa eleifend, facilisis justo.</h2>
+          <div class="hero-unit--icon-container">
+            <div class="inner">
+              <ul class="hero-unit--hexagon-menu">
+                <li class="first">
+                  <a href="#" class="nodejs"><img src="img/platform/nodejs.png" alt=""></a>
+                </li>
+                <li>
+                  <a href="#" class="laravel"><img src="img/platform/laravel.png" alt=""></a>
+                </li>
+                <li>
+                  <a href="#" class="php"><img src="img/platform/php.png" alt=""></a>
+                </li>
+                <li>
+                  <a href="#" class="mysql"><img src="img/platform/mysql.png" alt=""></a>
+                </li>
+                <li><a href="#" class="rubyonrails"><img src="img/platform/rails.png" alt=""></a></li>
+                <li class="last">
+                  <a href="#" class="drupal"><img src="img/platform/drupal.png" alt=""></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main">
+      <div class="inner">
+        <div class="articles">
+          <div class="articles--header">
+            <a href="#"><img src="img/article/article-header.png" alt="" class="icon"></a>
+            <h1>Latest Articles</h1>
+          </div>
+          <div class="articles--main">
+            <div class="inner">
+              <div class="row odd">
+                <div class="article--category">
+                  <div class="cols4">
+                    <div class="inner clearfix">
+                      <h2 class="articles--category-title">
+                        <a href="#"><img src="img/platform/nodejs.png" alt=""></a>
+                      </h2>
+                      <ul class="articles--list">
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 1</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 2</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 3</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 4</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 5</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cols4">
+                    <div class="inner clearfix">
+                      <h2 class="articles--category-title">
+                        <a href="#"><img src="img/platform/laravel.png" alt=""></a>
+                      </h2>
+                      <ul class="articles--list">
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 1</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 2</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 3</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 4</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 5</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cols4">
+                    <div class="inner clearfix">
+                      <h2 class="articles--category-title">
+                        <a href="#"><img src="img/platform/php.png" alt=""></a>
+                      </h2>
+                      <ul class="articles--list">
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 1</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 2</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 3</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 4</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 5</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row even">
+                <div class="article--category">
+                  <div class="cols4">
+                    <div class="inner clearfix">
+                      <h2 class="articles--category-title">
+                        <a href="#"><img src="img/platform/mysql.png" alt=""></a>
+                      </h2>
+                      <ul class="articles--list">
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 1</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 2</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 3</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 4</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 5</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cols4">
+                    <div class="inner clearfix">
+                      <h2 class="articles--category-title">
+                        <a href="#"><img src="img/platform/rails.png" alt=""></a>
+                      </h2>
+                      <ul class="articles--list">
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 1</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 2</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 3</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 4</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 5</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cols4">
+                    <div class="inner clearfix">
+                      <h2 class="articles--category-title">
+                        <a href="#"><img src="img/platform/drupal.png" alt=""></a>
+                      </h2>
+                      <ul class="articles--list">
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 1</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 2</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 3</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 4</a></li>
+                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 5</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </div>
+<footer class="footer">
+  <div class="inner">
+    <div class="col-4">
+      <div class="footer--branding">
+        <a href="#"><img src="" alt="Footer Logo"></a>
+      </div>
+      <div class="footer--social-icons">
+        <div class="icons--social">
+          <ul>
+            <li><a href=""><img src="" alt="" class="facebook"></a></li>
+            <li><a href=""><img src="" alt="" class="linkedin"></a></li>
+            <li><a href=""><img src="" alt="" class="twitter"></a></li>
+            <li><a href=""><img src="" alt="" class="github"></a></li>
+          </ul>
+        </div>
+      </div>      
+    </div>
+    <div class="col-4">
+      <div class="footer--about">
+        <h2>About Us</h2>
+        <p>Ut facilisis interdum dolor in dignissim. Nunc tincidunt risus placerat accumsan aliquet. Nunc semper velit urna, id aliquam massa feugiat eget. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin metus lectus, dapibus eget commodo non, lacinia in metus. Vivamus pharetra neque eu semper tristique.</p> 
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="footer-contact-form">
+        <form action="#" class="contact--form">
+          <input name="subject" type="text" placeholder="Subject">
+          <input name="email" type="email" placeholder="Email">
+          <textarea name="message" id="" cols="30" rows="10" placeholder="message"></textarea>
+          <button class="btn-success">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

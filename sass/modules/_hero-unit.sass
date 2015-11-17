@@ -1,0 +1,35 @@
+.hero-unit
+	+layout(12 fluid .35 float inside)
+	position: relative
+	&.landing
+		background: url('../img/hero/hero-landing.png') no-repeat fixed center center transparent
+		+clearfix
+	& h1
+		text-align: center
+		margin: 6% 0 2% 
+	& h2
+		text-align: center
+	&--icon-container
+		+squish(1)
+	&--hexagon-menu
+		font-size: 0
+		padding: 10% 0
+		+clearfix
+		+layout(24 fluid 0 float inside)
+		li
+			+span(4)
+			+breakpoint($mobile-screens)
+				+span(8)
+				margin-bottom: 3%
+			text-align: center
+			> a
+				+clearfix
+				display: inline-table
+				background: url('../img/hero/hexagon.png') no-repeat scroll top center transparent
+				width: 89px
+				height: 66px
+				padding: 15px 0 15px
+				&:hover
+					opacity: .8
+				
+

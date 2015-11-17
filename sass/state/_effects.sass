@@ -1,0 +1,35 @@
++keyframes(back-pulse)
+  50%
+    color: rgba(32, 152, 209, 0.75)
+
+=back-pulse
+  +hacks
+  overflow: hidden
+  +prefixed(transition-duration, $slowDuration)
+  +prefixed(transition-property, "color, background-color")
+  &:hover,
+  &:focus,
+  &:active
+    +prefixed(animation-name, back-pulse)
+    +prefixed(animation-duration, 1s)
+    +prefixed(animation-delay, $slowDuration)
+    +prefixed(animation-timing-function, linear)
+    +prefixed(animation-iteration-count, infinite)
+    color: white
+
+=rtlUnderlineEffect
+  &:after
+    content: ''
+    display: block
+    height: 3px
+    width: 0
+    left: 0
+    bottom: 0
+    position: absolute
+    background: transparent
+    transition: width .2s ease, background-color .2s ease
+  &:hover:after,
+  &:active:after,
+  &:focus:after
+    width: 100%
+    background: #95b75e

@@ -1,0 +1,67 @@
+.articles
+	+layout(12 0 fluid float inside)
+	border-top: 1px solid #e6e6e6
+	&--header
+		+squish(4)
+		+breakpoint($mobile-screens)
+			+squish(0)
+		+clearfix
+		position: relative
+		text-align: center
+
+		h1
+			margin: 20% 0
+
+		.icon
+			margin: auto
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 100%
+			border-radius: 70px
+			box-shadow: 0px -1px 1px 0px #e6e6e6
+			padding: 10px
+			background: #fff
+	&--main
+		.row
+			+clearfix
+			margin-bottom: 5%
+			&.odd
+				position: relative
+				padding-bottom: 5%
+				border-bottom: 1px solid #e6e6e6
+			.article--category
+				+squish(1)
+			.cols4
+				+span(4)
+				+breakpoint($mobile-screens)
+					+span(12)
+				padding-right: 3%
+				h2
+					font-size: 16px
+					margin: 0 0 20px
+					border-bottom: 3px solid #9dbe68
+					a
+						display: block
+				ul
+					+clearfix
+					li
+						position: relative
+						padding-left: 25px
+						&:before
+							content: ""
+							position: absolute
+							left: 0
+							width: 5px
+							height: 5px
+							background: #9dbe68
+							margin: auto
+							top: 24px
+						a
+							color: #000
+							font-size: 14px
+							display: block
+							padding-top: 18px
+							padding-bottom: 18px
+							+rtlUnderlineEffect
