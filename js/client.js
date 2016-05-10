@@ -26,6 +26,28 @@ export class Routings extends React.Component {
         id: 2, path: '/programming',
         name: 'programming',
         component: modules.view.Articles.Programming.index
+   		},
+   		{
+        id: 3, path: '/contact',
+        name: 'contact',
+        component: modules.view.Public.contact
+   		},
+   		{
+        id: 4, path: '/about',
+        name: 'about',
+        component: modules.view.Public.about
+   		},
+   		{
+        id: 5, 
+        path: '/services',
+        name: 'services',
+        component: modules.view.Public.services
+   		},
+   		{
+        id: 6, 
+        path: '/programmingSingle',
+        name: 'programmingSingle',
+        component: modules.view.Articles.Programming.single
    		}
     ];
     this.setState(

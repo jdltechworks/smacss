@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router";
 
 export default class Menu extends React.Component {
 	render() {
@@ -11,11 +12,11 @@ export default class Menu extends React.Component {
 	          </div>
 	          <div class="navbar--menu">
 	            <ul>
-	              <li><a href="#">Home</a></li>
-	              <li><a href="#/programming">Programming</a></li>
-	              <li><a href="#">About</a></li>
-	              <li><a href="#">Services</a></li>
-	              <li><a href="#">Contact</a></li>
+	              <li><Link to="/">Home</Link></li>
+	              <li><Link to="/programming">Programming</Link></li>
+	              <li><Link to="/about">About</Link></li>
+	              <li><Link to="/services">Services</Link></li>
+	              <li><Link to="/Contact">Contact</Link></li>
 	            </ul>
 	          </div>
 	        </nav>

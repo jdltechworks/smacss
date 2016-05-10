@@ -4,53 +4,31 @@ export default class FrontPage extends React.Component {
 	render() {
 		return(
 			<div>
-	    <section class="highlighted">
-	      <div class="inner">
-	        <div class="hero-unit landing">
-	          <h1>Your Ideas Our Code</h1>
-	          <h2>Using the Latest Web and Mobile Platforms</h2>
-	          <div class="hero-unit--icon-container">
-	            <div class="inner">
-	              <ul class="hero-unit--hexagon-menu">
-	                <li class="first">
-	                  <a href="#" class="nodejs"><img src="img/platform/nodejs.png" alt="" /></a>
-	                </li>
-	                <li>
-	                  <a href="#" class="laravel"><img src="img/platform/laravel.png" alt="" /></a>
-	                </li>
-	                <li>
-	                  <a href="#" class="php"><img src="img/platform/php.png" alt="" /></a>
-	                </li>
-	                <li>
-	                  <a href="#" class="mysql"><img src="img/platform/mysql.png" alt="" /></a>
-	                </li>
-	                <li><a href="#" class="rubyonrails"><img src="img/platform/rails.png" alt="" /></a></li>
-	                <li class="last">
-	                  <a href="#" class="drupal"><img src="img/platform/drupal.png" alt="" /></a>
-	                </li>
-	              </ul>
-	            </div>
-	          </div>
+	    <section className="highlighted">
+	      <div className="inner">
+	        <div className="hero-unit landing">
+	          <h1>Your <span className="slash">Ideas</span> Our Design <span className="slash"> &lt; / &gt; </span> Code</h1>
+	          <h2>Using the Latest and Mostly Used Platform</h2>
 	        </div>
 	      </div>
 	    </section>
-	    <section class="main">
-	      <div class="inner">
-	        <div class="articles">
-	          <div class="articles--header">
-	            <a href="#"><img src="img/article/article-header.png" alt="" class="icon" /></a>
+	    <section className="main">
+	      <div className="inner">
+	        <div className="articles">
+	          <div className="articles--header">
+	            <a href="#"><img src="img/article/article-header.png" alt="" className="icon" /></a>
 	            <h1>Latest Articles</h1>
 	          </div>
-	          <div class="articles--main">
-	            <div class="inner">
-	              <div class="row odd">
-	                <div class="article--category">
-	                  <div class="cols4">
-	                    <div class="inner clearfix">
-	                      <h2 class="articles--category-title">
+	          <div className="articles--main">
+	            <div className="inner">
+	              <div className="row odd">
+	                <div className="article--category">
+	                  <div className="cols4">
+	                    <div className="inner clearfix">
+	                      <h2 className="articles--category-title">
 	                        <a href="#"><img src="img/platform/nodejs.png" alt="" /></a>
 	                      </h2>
-	                      <ul class="articles--list">
+	                      <ul className="articles--list">
 	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 1</a></li>
 	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 2</a></li>
 	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 3</a></li>
@@ -59,12 +37,12 @@ export default class FrontPage extends React.Component {
 	                      </ul>
 	                    </div>
 	                  </div>
-	                  <div class="cols4">
-	                    <div class="inner clearfix">
-	                      <h2 class="articles--category-title">
+	                  <div className="cols4">
+	                    <div className="inner clearfix">
+	                      <h2 className="articles--category-title">
 	                        <a href="#"><img src="img/platform/laravel.png" alt="" /></a>
 	                      </h2>
-	                      <ul class="articles--list">
+	                      <ul className="articles--list">
 	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 1</a></li>
 	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 2</a></li>
 	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 3</a></li>
@@ -73,12 +51,12 @@ export default class FrontPage extends React.Component {
 	                      </ul>
 	                    </div>
 	                  </div>
-	                  <div class="cols4">
-	                    <div class="inner clearfix">
-	                      <h2 class="articles--category-title">
+	                  <div className="cols4">
+	                    <div className="inner clearfix">
+	                      <h2 className="articles--category-title">
 	                        <a href="#"><img src="img/platform/php.png" alt="" /></a>
 	                      </h2>
-	                      <ul class="articles--list">
+	                      <ul className="articles--list">
 	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 1</a></li>
 	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 2</a></li>
 	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 3</a></li>
@@ -89,14 +67,14 @@ export default class FrontPage extends React.Component {
 	                  </div>
 	                </div>
 	              </div>
-	              <div class="row even">
-	                <div class="article--category">
-	                  <div class="cols4">
-	                    <div class="inner clearfix">
-	                      <h2 class="articles--category-title">
+	              <div className="row even">
+	                <div className="article--category">
+	                  <div className="cols4">
+	                    <div className="inner clearfix">
+	                      <h2 className="articles--category-title">
 	                        <a href="#"><img src="img/platform/mysql.png" alt="" /></a>
 	                      </h2>
-	                      <ul class="articles--list">
+	                      <ul className="articles--list">
 	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 1</a></li>
 	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 2</a></li>
 	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 3</a></li>
@@ -105,12 +83,12 @@ export default class FrontPage extends React.Component {
 	                      </ul>
 	                    </div>
 	                  </div>
-	                  <div class="cols4">
-	                    <div class="inner clearfix">
-	                      <h2 class="articles--category-title">
+	                  <div className="cols4">
+	                    <div className="inner clearfix">
+	                      <h2 className="articles--category-title">
 	                        <a href="#"><img src="img/platform/rails.png" alt="" /></a>
 	                      </h2>
-	                      <ul class="articles--list">
+	                      <ul className="articles--list">
 	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 1</a></li>
 	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 2</a></li>
 	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 3</a></li>
@@ -119,12 +97,12 @@ export default class FrontPage extends React.Component {
 	                      </ul>
 	                    </div>
 	                  </div>
-	                  <div class="cols4">
-	                    <div class="inner clearfix">
-	                      <h2 class="articles--category-title">
+	                  <div className="cols4">
+	                    <div className="inner clearfix">
+	                      <h2 className="articles--category-title">
 	                        <a href="#"><img src="img/platform/drupal.png" alt="" /></a>
 	                      </h2>
-	                      <ul class="articles--list">
+	                      <ul className="articles--list">
 	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 1</a></li>
 	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 2</a></li>
 	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 3</a></li>
