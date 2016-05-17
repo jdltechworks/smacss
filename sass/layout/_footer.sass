@@ -1,12 +1,10 @@
 .footer
 	+layout(12 0 fluid float inside)
 	background: #f7f7f7
-	padding-top: 100px
 	border-top: 1px solid #e6e6e6
 	+clearfix
 	.inner
-		+squish(1)
-		background: #fff
+		background: #f9f9f9
 		border-left: 1px solid #e6e6e6
 		border-right: 1px solid #e6e6e6
 		bottom: 0
@@ -21,7 +19,7 @@
 				height: 50px
 				background: #9dbe68
 				left: 0
-				top: -13%
+				top: -29px
 				position: absolute
 				width: 50px
 				border-radius: 100px
@@ -34,7 +32,7 @@
 				height: 35px
 				background: #fff
 				left: 0
-				top: -10%
+				top: -21px
 				position: absolute
 				width: 35px
 				border-radius: 100px
@@ -42,6 +40,8 @@
 				bottom: 0
 				margin-left: auto
 				margin-right: auto
+		&:last-child
+			padding-top: 2.5em
 		+span(4)
 		+breakpoint($mobile-screens)
 			+span(12)

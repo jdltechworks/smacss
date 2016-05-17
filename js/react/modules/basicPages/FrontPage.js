@@ -16,101 +16,28 @@ export default class FrontPage extends React.Component {
 	      <div className="inner">
 	        <div className="articles">
 	          <div className="articles--header">
-	            <a href="#"><img src="img/article/article-header.png" alt="" className="icon" /></a>
 	            <h1>Latest Articles</h1>
+	            <h2 className="slash"> &lt; / &gt; </h2>
 	          </div>
 	          <div className="articles--main">
 	            <div className="inner">
 	              <div className="row odd">
 	                <div className="article--category">
-	                  <div className="cols4">
-	                    <div className="inner clearfix">
-	                      <h2 className="articles--category-title">
-	                        <a href="#"><img src="img/platform/nodejs.png" alt="" /></a>
-	                      </h2>
-	                      <ul className="articles--list">
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 1</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 2</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 3</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 4</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 5</a></li>
-	                      </ul>
-	                    </div>
-	                  </div>
-	                  <div className="cols4">
-	                    <div className="inner clearfix">
-	                      <h2 className="articles--category-title">
-	                        <a href="#"><img src="img/platform/laravel.png" alt="" /></a>
-	                      </h2>
-	                      <ul className="articles--list">
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 1</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 2</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 3</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 4</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 5</a></li>
-	                      </ul>
-	                    </div>
-	                  </div>
-	                  <div className="cols4">
-	                    <div className="inner clearfix">
-	                      <h2 className="articles--category-title">
-	                        <a href="#"><img src="img/platform/php.png" alt="" /></a>
-	                      </h2>
-	                      <ul className="articles--list">
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 1</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 2</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 3</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 4</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 5</a></li>
-	                      </ul>
-	                    </div>
-	                  </div>
+	                <div className="article">
+	                	<h2>Aliquam in malesuada felis. Morbi egestas interdum condimentum.</h2>
+	                	<p>Donec placerat enim vel arcu pharetra convallis. Nulla facilisi. Curabitur congue semper velit in ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar nisi vitae porta gravida. Morbi aliquam magna et turpis efficitur, eu sollicitudin leo vestibulum. Donec sit amet ipsum et est accumsan varius non ut enim. Aenean magna magna, mattis vitae volutpat non, pulvinar at nunc.</p>
+	                	<a href="#">Read more</a>
 	                </div>
-	              </div>
-	              <div className="row even">
-	                <div className="article--category">
-	                  <div className="cols4">
-	                    <div className="inner clearfix">
-	                      <h2 className="articles--category-title">
-	                        <a href="#"><img src="img/platform/mysql.png" alt="" /></a>
-	                      </h2>
-	                      <ul className="articles--list">
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 1</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 2</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 3</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 4</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 5</a></li>
-	                      </ul>
-	                    </div>
-	                  </div>
-	                  <div className="cols4">
-	                    <div className="inner clearfix">
-	                      <h2 className="articles--category-title">
-	                        <a href="#"><img src="img/platform/rails.png" alt="" /></a>
-	                      </h2>
-	                      <ul className="articles--list">
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 1</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 2</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 3</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 4</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 5</a></li>
-	                      </ul>
-	                    </div>
-	                  </div>
-	                  <div className="cols4">
-	                    <div className="inner clearfix">
-	                      <h2 className="articles--category-title">
-	                        <a href="#"><img src="img/platform/drupal.png" alt="" /></a>
-	                      </h2>
-	                      <ul className="articles--list">
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 1</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 2</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 3</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 4</a></li>
-	                        <li><a href="#">Lorem Ipsum Dolo SIt Amet Amet Amet 5</a></li>
-	                      </ul>
-	                    </div>
-	                  </div>
+	                <div className="article">
+	                	<h2><a href="">Aliquam in malesuada felis. Morbi egestas interdum condimentum.</a></h2>
+	                	<p>Donec placerat enim vel arcu pharetra convallis. Nulla facilisi. Curabitur congue semper velit in ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar nisi vitae porta gravida. Morbi aliquam magna et turpis efficitur, eu sollicitudin leo vestibulum. Donec sit amet ipsum et est accumsan varius non ut enim. Aenean magna magna, mattis vitae volutpat non, pulvinar at nunc.</p>
+	                	<a href="#">Read more</a>
+	                </div>
+	                <div className="article">
+	                	<h2><a href="">Aliquam in malesuada felis. Morbi egestas interdum condimentum.</a></h2>
+	                	<p>Donec placerat enim vel arcu pharetra convallis. Nulla facilisi. Curabitur congue semper velit in ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar nisi vitae porta gravida. Morbi aliquam magna et turpis efficitur, eu sollicitudin leo vestibulum. Donec sit amet ipsum et est accumsan varius non ut enim. Aenean magna magna, mattis vitae volutpat non, pulvinar at nunc.</p>
+	                	<a href="#">Read more</a>
+	                </div>
 	                </div>
 	              </div>
 	            </div>

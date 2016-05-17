@@ -4,7 +4,7 @@
   "description": "JDLtechworks website template",
   "main": "webpack.config.js",
   "scripts": {
-    "dev": "./node_modules/.bin/webpack-dev-server --content-base /var/www/jdltechworks/dist --inline --hot",
+    "dev": "./node_modules/.bin/webpack-dev-server --content-base dist --inline --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
