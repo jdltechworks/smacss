@@ -24,7 +24,7 @@ export default class FrontPage extends React.Component {
 	              <div className="row odd">
 	                <div className="article--category">
 	                <div className="article">
-	                	<h2>Aliquam in malesuada felis. Morbi egestas interdum condimentum.</h2>
+	                	<h2><a href="">Aliquam in malesuada felis. Morbi egestas interdum condimentum.</a></h2>
 	                	<p>Donec placerat enim vel arcu pharetra convallis. Nulla facilisi. Curabitur congue semper velit in ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar nisi vitae porta gravida. Morbi aliquam magna et turpis efficitur, eu sollicitudin leo vestibulum. Donec sit amet ipsum et est accumsan varius non ut enim. Aenean magna magna, mattis vitae volutpat non, pulvinar at nunc.</p>
 	                	<a href="#">Read more</a>
 	                </div>

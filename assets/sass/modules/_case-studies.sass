@@ -1,0 +1,25 @@
+.case--studies
+  position: relative
+  &-carousel
+    position: relative
+    &-content
+      position: absolute
+      height: 100%
+      background: rgba(243, 156, 18, 0.74)
+      width: 100%
+      z-index: 99
+      top: 0
+      +clearfix
+      &-inner
+        +squish(1)
+        bottom: 0
+        z-index: 100
+        padding-top: 5%
+        padding-bottom: 5%
+        position: absolute
+        h2
+          font-size: 28px
+        p
+          font-size: 18px
+          color: #fff
+          letter-spacing: 2px

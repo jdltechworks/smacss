@@ -1,0 +1,63 @@
+.navbar
+	+layout(12 fluid .35 float inside)
+	+clearfix
+	position: fixed
+	background: #fff
+	width: 100%
+	border-bottom: 1px solid #e6e6e6
+	z-index: 1000
+	+breakpoint($mobile-screens)
+		+layout(12 fluid 0 float inside)
+		position: inherit
+
+	&--brand
+		+span(4)
+		padding-top: 27px
+		padding-bottom: 21px
+		text-align: center
+		+breakpoint($mobile-screens)
+			+span(12)
+			padding-top: 0px
+			padding-bottom: 0px
+			border-bottom: 1px solid #e6e6e6
+		> a
+			padding-left: 10px
+			+breakpoint($mobile-screens)
+				padding: 18px 10px
+			display: inline-table
+			
+	&--menu
+		+span(8)
+		+breakpoint($mobile-screens)
+			+span(12)
+		
+		> ul
+			float: right
+			font-size: 0
+			+breakpoint($mobile-screens)
+				float: none
+			> li
+				display: table-cell
+				font-size: 0
+				position: relative
+				+breakpoint($mobile-screens)
+					display: block
+					border-bottom: 1px solid #e6e6e6
+					&:last-child
+						border-bottom: none
+				
+				a
+					+rtlUnderlineEffect	
+					padding: 25px 35px
+					font-family: orbitronMedium
+					+breakpoint($mobile-screens)
+					padding: 25px 25px
+					display: block
+					color: #666
+					position: relative
+					&:hover,
+					&:active,
+					&:focus
+						color: rgba(77, 77, 77, .8)
+					&:active
+						opacity: .8
