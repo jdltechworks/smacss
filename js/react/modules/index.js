@@ -6,5 +6,7 @@ export Services from './basicPages/Services';
 export CaseStudies from './CaseStudies';
 export CaseStudiesBySlug from './CaseStudies/BySlug';
 
+export Login from './basicPages/Login';
+
 //Restricted page
 export Dashboard from './Admin/Dashboard';

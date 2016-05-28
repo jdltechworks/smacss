@@ -3,10 +3,11 @@ import AdminMenu from './components/AdminMenu';
 import Footer from './components/Footer';
 import { hashHistory } from 'react-router';
 
-export default class AccessRestricted extends React.Component {
-  static childContextTypes = {
-
+export default class AdminAccess extends React.Component {
+  static contextTypes = {
+    admin: React.PropTypes.string
   };
+  static childContext
   constructor(props) {
     super(props);
     this.state = {
@@ -17,11 +18,11 @@ export default class AccessRestricted extends React.Component {
   }
   componentWillMount() {
     let { isAdmin } = this.state;
-    if(!isAdmin) {
-      hashHistory.push('/');
-    } else {
-      hashHistory.push('/admin/dashboard');
-    }
+    let { admin } = this.context;
+    !isAdmin ? browserHistory.push('/login') : browserHistory.push(admin+'/dashboard');
+  }
+  checkAuth() {
+
   }
   render() {
     return (

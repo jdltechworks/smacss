@@ -1,5 +1,10 @@
 import React from 'react';
-import { hashHistory, browserHistory, Router, Route, IndexRoute } from "react-router";
+import { 
+  hashHistory, 
+  browserHistory, 
+  Router, 
+  Route, 
+  IndexRoute } from "react-router";
 
 //React Components
 
@@ -7,7 +12,7 @@ import * as m from '../modules';
 
 import Layout from './Layout';
 
-import AccessRestricted  from './AccessRestricted';
+import AdminAccess  from './AdminAccess';
 
 export const routes = [
   {
@@ -21,7 +26,7 @@ export const routes = [
   {
     path: '/about',
     name: 'about',
-    menuName: 'About',
+    menuName: 'The Crew',
     admin: false,
     menu: true,
     component: m.About
@@ -48,6 +53,13 @@ export const routes = [
     admin: false,
     menu: false,
     component: m.CaseStudiesBySlug
+  },
+  {
+    path: '/login',
+    name: 'login',
+    admin: false,
+    menu: false,
+    component: m.Login
   }
 ];
 
@@ -85,16 +97,16 @@ class Routings extends React.Component {
   render() {
     const { admin } = this.state;
     return (
-      <Router history={hashHistory}>
+      <Router history={browserHistory}>
         <Route path="/" component={Layout}>
           <IndexRoute name="front-page" component={m.FrontPage}></IndexRoute>
           {routes.map((route, index) => (
             <Route key={index} name={route.name} path={route.path} component={route.component}></Route>
           ))}
         </Route>
-        <Route name="access-restricted" path={admin} component={AccessRestricted}>
+        <Route name="admin-access" path={admin} component={AdminAccess}>
           {restrictedRoutes.map((route, index) =>(
-            <Route key={index} name={route.name} path={admin + route.path} component={route.component}></Route> 
+            <Route key={index} name={route.name} onEnter={route.onEnter} path={admin + route.path} component={route.component}></Route> 
           ))}
         </Route>
       </Router>

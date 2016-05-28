@@ -8,7 +8,8 @@ export default class CaseStudies extends React.Component {
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      arrow: false
     };
 		return (
 		<section className="main">

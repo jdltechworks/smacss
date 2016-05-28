@@ -945,6 +945,14 @@ a.button {
         .hero-unit--hexagon-menu li > a:hover {
           opacity: 0.8; }
 
+/* line 1, ../../assets/sass/modules/_login.sass */
+.login {
+  margin-left: 33.33333%;
+  margin-right: 33.33333%;
+  margin-top: 10%;
+  border: 1px solid #e6e6e6;
+  padding: 3% 3% 5%; }
+
 /* line 1, ../../assets/sass/modules/_navbar.sass */
 .navbar {
   *zoom: 1;

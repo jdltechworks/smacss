@@ -1,11 +1,21 @@
 import React from 'react';
 
 export default class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      disabled: false
+    }
+  }
 	sendMail(e) {
     e.preventDefault();
     console.log(this.refs);
+    e.currentTarget.lastChild.disabled = e.currentTarget.lastChild.disabled === true ? false : true;
+    e.currentTarget.lastChild.style.cursor = 'not-allowed';
+    console.log(process.env.NODE_ENV);
   }
   render() {
+    let { disabled } = this.state;
 		return (
 			<section className="main">
         <div className="main--banner">
