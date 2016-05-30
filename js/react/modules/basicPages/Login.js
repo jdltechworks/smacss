@@ -1,11 +1,9 @@
 import React from 'react';
-import axios from 'axios';
 
 export default class Login extends React.Component {
 
   _authenticate(e) {
     e.preventDefault();
-    console.log(this.refs);
   }
   render() {
     return(

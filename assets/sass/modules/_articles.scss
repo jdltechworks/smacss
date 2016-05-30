@@ -1,0 +1,135 @@
+.articles {
+  @include layout(12 0 fluid float inside);
+
+  border-top: 1px solid #e6e6e6;
+
+  &--header {
+    @include squish(4);
+
+    @include breakpoint($mobile-screens) {
+      @include squish(0);
+    }
+
+
+    @include clearfix;
+
+    position: relative;
+    text-align: center;
+    font-family: orbitronMedium;
+    color: #666666;
+
+    h1 {
+      margin: 20% 0 5%;
+      letter-spacing: 9px;
+      font-size: 28px;
+    }
+
+    .icon {
+      margin: auto;
+      position: absolute;
+      top: -100%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 70px;
+      box-shadow: 0px -1px 1px 0px #e6e6e6;
+      padding: 10px;
+      background: #fff;
+    }
+
+    h2 {
+      &.slash {
+        color: #9dbe68;
+        font-size: 50px;
+        letter-spacing: -5px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &--main {
+    .row {
+      @include clearfix;
+
+      margin-bottom: 5%;
+
+      &.odd {
+        position: relative;
+        padding-bottom: 5%;
+      }
+
+      .article--category {
+        @include squish(1);
+
+        @include clearfix;
+
+        .article {
+          h2 {
+            a {
+              font-family: orbitronMedium;
+              letter-spacing: 2px;
+              opacity: 0.9;
+              color: #000;
+              font-size: 28px;
+            }
+          }
+
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .cols4 {
+        @include span(4);
+
+        @include breakpoint($mobile-screens) {
+          @include span(12);
+        }
+
+
+        padding-right: 3%;
+
+        h2 {
+          font-size: 16px;
+          margin: 0 0 20px;
+          border-bottom: 3px solid #9dbe68;
+
+          a {
+            display: block;
+          }
+        }
+
+        ul {
+          @include clearfix;
+
+          li {
+            position: relative;
+            padding-left: 25px;
+
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              width: 5px;
+              height: 5px;
+              background: #9dbe68;
+              margin: auto;
+              top: 24px;
+            }
+
+            a {
+              color: #000;
+              font-size: 14px;
+              display: block;
+              padding-top: 18px;
+              padding-bottom: 18px;
+
+              @include rtlUnderlineEffect;
+            }
+          }
+        }
+      }
+    }
+  }
+}

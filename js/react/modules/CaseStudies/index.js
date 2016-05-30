@@ -9,7 +9,8 @@ export default class CaseStudies extends React.Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrow: false
+      arrow: true,
+      fade: true
     };
 		return (
 		<section className="main">
@@ -28,7 +29,7 @@ export default class CaseStudies extends React.Component {
             <img src="http://dummyimage.com/1351x547" />
             <div className="case--studies-carousel-content">
               <div className="case--studies-carousel-content-inner">
-                <h2>Case Studies 1</h2>
+                <h2>Case Studies 2</h2>
                 <p>Nam id porta est. In at magna ornare, facilisis orci ac, interdum eros. Phasellus lacinia libero eget sapien tincidunt, eget porta arcu congue. Proin placerat ligula quis mattis pharetra. Aliquam nec lacinia massa. Duis mattis orci vitae nunc condimentum, at convallis neque ornare. Curabitur imperdiet orci ut dapibus pulvinar. Praesent nec velit ut lorem ultrices placerat. Pellentesque feugiat mollis condimentum. Aenean cursus vitae velit sed consectetur.</p>
               </div>
             </div>
@@ -37,7 +38,7 @@ export default class CaseStudies extends React.Component {
             <img src="http://dummyimage.com/1351x547" />
             <div className="case--studies-carousel-content">
               <div className="case--studies-carousel-content-inner">
-                <h2>Case Studies 1</h2>
+                <h2>Case Studies 3</h2>
                 <p>Nam id porta est. In at magna ornare, facilisis orci ac, interdum eros. Phasellus lacinia libero eget sapien tincidunt, eget porta arcu congue. Proin placerat ligula quis mattis pharetra. Aliquam nec lacinia massa. Duis mattis orci vitae nunc condimentum, at convallis neque ornare. Curabitur imperdiet orci ut dapibus pulvinar. Praesent nec velit ut lorem ultrices placerat. Pellentesque feugiat mollis condimentum. Aenean cursus vitae velit sed consectetur.</p>
               </div>
             </div>

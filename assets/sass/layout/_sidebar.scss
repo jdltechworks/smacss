@@ -1,0 +1,33 @@
+.sidebar {
+  @include span(3);
+
+  &--items {
+    @include clearfix;
+
+    padding-top: 120px;
+
+    > div {
+      margin-bottom: 18%;
+    }
+
+    a {
+      color: #000;
+      display: block;
+      border: 1px solid transparent;
+      line-height: 1.8;
+
+      &:hover {
+        color: #9dbe68;
+      }
+
+      &:active {
+        border: 1px dotted #e6e6e6;
+      }
+    }
+
+    h2 {
+      border-bottom: 5px solid #9dbe68;
+      padding-bottom: 5%;
+    }
+  }
+}

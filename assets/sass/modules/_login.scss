@@ -1,0 +1,7 @@
+.login {
+  @include squish(8);
+
+  margin-top: 10%;
+  border: 1px solid #e6e6e6;
+  padding: 3% 3% 5%;
+}

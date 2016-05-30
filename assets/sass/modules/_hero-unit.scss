@@ -1,0 +1,72 @@
+.hero-unit {
+  @include layout(12 fluid 0.35 float inside);
+
+  position: relative;
+
+  &.landing {
+    background: url("../img/hero/hero-landing.png") no-repeat fixed center top transparent;
+    padding: 5% 0 10%;
+
+    @include clearfix;
+  }
+
+  & h1 {
+    font-family: orbitronMedium;
+    color: #666;
+    letter-spacing: 2px;
+    font-size: 40px;
+    text-align: center;
+    margin: 6% 0;
+
+    span.slash {
+      color: #9dbe68;
+    }
+  }
+
+  & h2 {
+    font-family: quickSandRegular;
+    font-size: 40px;
+    text-align: center;
+    color: #666;
+  }
+
+  &--icon-container {
+    @include squish(1);
+  }
+
+  &--hexagon-menu {
+    font-size: 0;
+    padding: 7% 0 8%;
+
+    @include clearfix;
+
+    @include layout(24 fluid 0 float inside);
+
+    li {
+      @include span(4);
+
+      @include breakpoint($mobile-screens) {
+        @include span(8);
+
+        margin-bottom: 3%;
+      }
+
+
+      text-align: center;
+
+      > a {
+        @include clearfix;
+
+        display: inline-table;
+        background: url("../img/global/hexagon.png") no-repeat scroll top center transparent;
+        width: 89px;
+        height: 66px;
+        padding: 15px 0 15px;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.social {
+  &--icons {
+    @include clearfix;
+
+    ul {
+      text-align: center;
+
+      li {
+        display: inline-table;
+
+        a {
+          display: block;
+          padding: 10px 5px;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}

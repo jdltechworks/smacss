@@ -1,7 +1,7 @@
 import React from 'react';
 import AdminMenu from './components/AdminMenu';
 import Footer from './components/Footer';
-import { hashHistory } from 'react-router';
+import { browserHistory } from 'react-router';
 
 export default class AdminAccess extends React.Component {
   static contextTypes = {
@@ -11,15 +11,15 @@ export default class AdminAccess extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isAdmin: false
+      isAdmin: true
     };
   }
   getChildContext() {
   }
   componentWillMount() {
-    let { isAdmin } = this.state;
     let { admin } = this.context;
-    !isAdmin ? browserHistory.push('/login') : browserHistory.push(admin+'/dashboard');
+    let { isAdmin } = this.state;
+    !isAdmin ? browserHistory.push('/login') : '';
   }
   checkAuth() {
 

@@ -1,0 +1,103 @@
+.navbar {
+  @include layout(12 fluid 0.35 float inside);
+
+  @include clearfix;
+
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+  z-index: 1000;
+
+  @include breakpoint($mobile-screens) {
+    @include layout(12 fluid 0 float inside);
+
+    position: inherit;
+  }
+
+
+  &--brand {
+    @include span(4);
+
+    padding-top: 27px;
+    padding-bottom: 21px;
+    text-align: center;
+
+    @include breakpoint($mobile-screens) {
+      @include span(12);
+
+      padding-top: 0px;
+      padding-bottom: 0px;
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+
+    > a {
+      padding-left: 10px;
+      display: inline-table;
+
+      @include breakpoint($mobile-screens) {
+        padding: 18px 10px;
+      }
+    }
+  }
+
+  &--menu {
+    @include span(8);
+
+    @include breakpoint($mobile-screens) {
+      @include span(12);
+    }
+
+
+    > ul {
+      float: right;
+      font-size: 0;
+
+      @include breakpoint($mobile-screens) {
+        float: none;
+      }
+
+
+      > li {
+        display: table-cell;
+        font-size: 0;
+        position: relative;
+
+        @include breakpoint($mobile-screens) {
+          display: block;
+          border-bottom: 1px solid #e6e6e6;
+
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+
+
+        a {
+          @include rtlUnderlineEffect;
+
+          padding: 25px 35px;
+          font-family: orbitronMedium;
+
+          @include breakpoint($mobile-screens);
+
+          padding: 25px 25px;
+          display: block;
+          color: #666;
+          position: relative;
+
+          &:hover,
+          &:active,
+          &:focus {
+            color: rgba(77, 77, 77, 0.8);
+          }
+
+          &:active {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}

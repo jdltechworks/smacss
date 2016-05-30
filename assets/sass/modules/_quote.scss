@@ -1,0 +1,18 @@
+.quote {
+  box-shadow: 1px 0px 6px 0px #e6e6e6;
+  margin-top: 5%;
+  background: url("../img/skyline.png") no-repeat scroll center bottom transparent;
+
+  &--inner {}
+
+  text-align: center;
+  padding: 10% 25px 10.5%;
+
+  a {
+    &.button {
+      width: 50%;
+      margin: auto;
+      margin-bottom: 2.5em;
+    }
+  }
+}

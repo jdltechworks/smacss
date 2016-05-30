@@ -1,0 +1,100 @@
+.footer {
+  @include layout(12 0 fluid float inside);
+
+  background: #f7f7f7;
+  border-top: 1px solid #e6e6e6;
+  height: 138px;
+
+  @include clearfix;
+
+  .inner {
+    background: #f9f9f9;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    bottom: 0;
+  }
+
+  &--cols4 {
+    padding-top: 45px;
+    border-top: 10px solid #e6e6e6;
+
+    &:first-child {
+      position: relative;
+      border-top: 10px solid #9dbe68;
+
+      &:before {
+        content: " ";
+        height: 50px;
+        background: #9dbe68;
+        left: 0;
+        top: -29px;
+        position: absolute;
+        width: 50px;
+        border-radius: 100px;
+        right: 0;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &:after {
+        content: " ";
+        height: 35px;
+        background: #fff;
+        left: 0;
+        top: -21px;
+        position: absolute;
+        width: 35px;
+        border-radius: 100px;
+        right: 0;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &:last-child {
+      padding-top: 2.5em;
+    }
+
+    @include span(4);
+
+    @include breakpoint($mobile-screens) {
+      @include span(12);
+    }
+  }
+
+  &--branding {
+    text-align: center;
+    margin-bottom: 15px;
+
+    .copyright {
+      margin: 0;
+      font-size: 10px;
+    }
+  }
+
+  &--about,
+  &--newsletter-form {
+    @include clearfix;
+
+    padding: 0 39px 0 30px;
+
+    h2 {
+      margin-top: 0;
+      font-family: orbitronMedium;
+      color: #9dbe68;
+      margin-bottom: 8%;
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: 13px;
+    }
+  }
+}

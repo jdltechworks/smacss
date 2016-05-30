@@ -17,9 +17,9 @@ export default class Footer extends React.Component {
 		      <div class="footer--social-icons">
 		        <div class="social--icons">
 		          <ul>
-		            <li><a href="http://facebook.com/jdltechworks" target="_blank"><img src="img/social/facebook.png" alt="" class="facebook" /></a></li>
-		            <li><a href="http://twitter.com/jdltechworks" target="_blank"><img src="img/social/twitter.png" alt="" class="twitter" /></a></li>
-		            <li><a href="http://github.com/jdltechworks" target="_blank"><img src="img/social/github.png" alt="" class="github" /></a></li>
+		            <li><a href="http://facebook.com/jdltechworks" target="_blank"><img src="/img/social/facebook.png" alt="" class="facebook" /></a></li>
+		            <li><a href="http://twitter.com/jdltechworks" target="_blank"><img src="/img/social/twitter.png" alt="" class="twitter" /></a></li>
+		            <li><a href="http://github.com/jdltechworks" target="_blank"><img src="/img/social/github.png" alt="" class="github" /></a></li>
 		          </ul>
 		        </div>
 		      </div>

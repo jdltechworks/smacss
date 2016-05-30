@@ -70,10 +70,35 @@ const restrictedRoutes = [
     menuName: 'Dashboard',
     menu: true,
     component: m.Dashboard
+  },
+  {
+    path: '/articles/:id/edit',
+    name: 'edit-articles',
+    menu: false,
+    component: m.EditArticle
+  },
+  {
+    path: '/articles/add',
+    name: 'add-articles',
+    menu: false,
+    component: m.AddArticle
+  },
+  {
+    path: '/articles',
+    name: 'articles',
+    menu: false,
+    component: m.AdminArticles
   }
 ];
 
 class Routings extends React.Component {
+  
+  static childContextTypes = {
+    admin: React.PropTypes.string,
+    publicMenu: React.PropTypes.array,
+    adminMenu: React.PropTypes. array
+  };
+
   constructor(props) {
     super(props);
     this.state = {
@@ -82,11 +107,6 @@ class Routings extends React.Component {
       admin: '/admin'
     }
   }
-  static childContextTypes = {
-    admin: React.PropTypes.string,
-    publicMenu: React.PropTypes.array,
-    adminMenu: React.PropTypes. array
-  };
   getChildContext() {
     return {
       admin: this.state.admin,

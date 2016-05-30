@@ -12,7 +12,6 @@ export default class Contact extends React.Component {
     console.log(this.refs);
     e.currentTarget.lastChild.disabled = e.currentTarget.lastChild.disabled === true ? false : true;
     e.currentTarget.lastChild.style.cursor = 'not-allowed';
-    console.log(process.env.NODE_ENV);
   }
   render() {
     let { disabled } = this.state;
