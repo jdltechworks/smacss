@@ -2,7 +2,7 @@
 a.button {
   display: block;
 
-  @include box-sizing;
+  box-sizing: border-box;
 
   transition: opacity 0.35s ease-in-out;
   -moz-transition: opacity 0.35s ease-in-out;

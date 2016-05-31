@@ -58,10 +58,6 @@
     }
 
     @include span(4);
-
-    @include breakpoint($mobile-screens) {
-      @include span(12);
-    }
   }
 
   &--branding {

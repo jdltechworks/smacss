@@ -6,10 +6,6 @@
   &--header {
     @include squish(4);
 
-    @include breakpoint($mobile-screens) {
-      @include squish(0);
-    }
-
 
     @include clearfix;
 
@@ -82,10 +78,6 @@
 
       .cols4 {
         @include span(4);
-
-        @include breakpoint($mobile-screens) {
-          @include span(12);
-        }
 
 
         padding-right: 3%;

@@ -45,12 +45,6 @@
     li {
       @include span(4);
 
-      @include breakpoint($mobile-screens) {
-        @include span(8);
-
-        margin-bottom: 3%;
-      }
-
 
       text-align: center;
 
