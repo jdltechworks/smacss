@@ -1,17 +1,28 @@
 .main {
   @include layout(12 fluid 0 float inside);
-
+  h2, h3, h4 {
+    font-family: orbitronMedium;
+    letter-spacing: 2px;
+    opacity: 0.8;
+  }
+  &--headings {
+    border-bottom: 5px solid #9dbe68;
+    padding: 2% 2% 1%;
+    margin-bottom: 7%;
+    text-align: center;
+    &-inner {
+      @include squish(1);
+      h2 {
+        color: rgba(0,0,0,.78);
+        letter-spacing: 25px;
+      }
+    }
+  }
   padding-bottom: 10%;
   overflow: hidden;
 
   &--inner {
     @include clearfix;
-  }
-
-  h2, h3, h4 {
-    font-family: orbitronMedium;
-    letter-spacing: 2px;
-    opacity: 0.8;
   }
 
   &--inner {

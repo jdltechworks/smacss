@@ -4,6 +4,11 @@ export default class Services extends React.Component {
 	render() {
 		return (
 			<section className="main">
+        <div className="main--headings">
+          <div className="main--headings-inner">
+            <h2>Services</h2>
+          </div>
+        </div>
 				<div className="main--inner">
 					<div className="main-content">
             <div className="services">

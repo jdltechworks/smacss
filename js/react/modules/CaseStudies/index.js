@@ -8,16 +8,18 @@ export default class CaseStudies extends React.Component {
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1,
       arrow: true,
-      fade: true
+      fade: true,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      swipe: false
     };
 		return (
 		<section className="main">
       <div className="slider">
         <Slider {...settings}>
           <div className="case--studies-carousel">
-            <img src="http://dummyimage.com/1351x547" />
+            <img src="http://lorempixel.com/1351/547/technics/2/Dummy-Text/" />
             <div className="case--studies-carousel-content">
               <div className="case--studies-carousel-content-inner">
                 <h2>Case Studies 1</h2>
@@ -26,7 +28,7 @@ export default class CaseStudies extends React.Component {
             </div>
           </div>
           <div className="case--studies-carousel">
-            <img src="http://dummyimage.com/1351x547" />
+            <img src="http://lorempixel.com/1351/547/technics/3/Dummy-Text/" />
             <div className="case--studies-carousel-content">
               <div className="case--studies-carousel-content-inner">
                 <h2>Case Studies 2</h2>
@@ -35,7 +37,7 @@ export default class CaseStudies extends React.Component {
             </div>
           </div>
           <div className="case--studies-carousel">
-            <img src="http://dummyimage.com/1351x547" />
+            <img src="http://lorempixel.com/1351/547/technics/6/Dummy-Text/" />
             <div className="case--studies-carousel-content">
               <div className="case--studies-carousel-content-inner">
                 <h2>Case Studies 3</h2>
@@ -44,7 +46,7 @@ export default class CaseStudies extends React.Component {
             </div>
           </div>
           <div className="case--studies-carousel">
-            <img src="http://dummyimage.com/1351x547" />
+            <img src="http://lorempixel.com/1351/547/technics/10/Dummy-Text/" />
             <div className="case--studies-carousel-content">
               <div className="case--studies-carousel-content-inner">
                 <h2>Case Studies 1</h2>

@@ -7,7 +7,6 @@ export default class AdminAccess extends React.Component {
   static contextTypes = {
     admin: React.PropTypes.string
   };
-  static childContext
   constructor(props) {
     super(props);
     this.state = {

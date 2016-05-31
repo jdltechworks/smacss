@@ -86,8 +86,28 @@ const restrictedRoutes = [
   {
     path: '/articles',
     name: 'articles',
-    menu: false,
+    menuName: 'Articles',
+    menu: true,
     component: m.AdminArticles
+  },
+  {
+    path: '/case-studies',
+    name: 'all-case-studies',
+    menuName: 'Case Studies',
+    menu: true,
+    component: m.AdminCaseStudies
+  },
+  {
+    path: '/case-studies/:id/edit',
+    name: 'edit-articles',
+    menu: false,
+    component: m.EditCaseStudy
+  },
+  {
+    path: '/case-studies/add',
+    name: 'add-case-study',
+    menu: false,
+    component: m.AddCaseStudy
   }
 ];
 
@@ -125,10 +145,12 @@ class Routings extends React.Component {
           ))}
         </Route>
         <Route name="admin-access" path={admin} component={AdminAccess}>
+          <IndexRoute name="admin-front-page" component={m.Dashboard}></IndexRoute>
           {restrictedRoutes.map((route, index) =>(
             <Route key={index} name={route.name} onEnter={route.onEnter} path={admin + route.path} component={route.component}></Route> 
           ))}
         </Route>
+        <Route name="not-found" path="*" component={m.NotFound}></Route>
       </Router>
     );
   }

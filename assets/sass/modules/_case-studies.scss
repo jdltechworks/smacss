@@ -6,8 +6,9 @@
 
     &-content {
       position: absolute;
+      border-bottom: 5px solid #9dbe68;
       height: 100%;
-      background: rgba(243, 156, 18, 0.74);
+      background: rgba(255, 255, 255, .85);
       width: 100%;
       z-index: 99;
       top: 0;
@@ -25,11 +26,12 @@
 
         h2 {
           font-size: 28px;
+          color: #9dbe68;
         }
 
         p {
           font-size: 18px;
-          color: #fff;
+          color: rgba(0,0,0,.70);
           letter-spacing: 2px;
         }
       }

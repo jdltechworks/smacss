@@ -3,7 +3,11 @@ import React from 'react';
 export default class EditArticle extends React.Component {
   render() {
     return(
-      <div>Admin Edit Article</div>
+      <section className="main">
+        <div className="main--inner">
+          <h2>Admin | Add Article</h2>
+        </div>
+      </section>
       );
   }
 }

@@ -5,7 +5,7 @@ export default class Dashboard extends React.Component {
 		return (
       <section className="main">
         <div className="main--inner">
-          <h2>Dashboard</h2>
+          <h2>Admin | Dashboard</h2>
         </div>
       </section>
 		);

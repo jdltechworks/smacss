@@ -13,13 +13,13 @@ export default class AdminMenu extends React.Component {
         <div class="inner">
           <nav class="navbar">
             <div class="navbar--brand">
-              <a href="/"><img src="/img/logo.png" alt="JDLtechworks Logo" /></a>
+              <Link to="/admin"><img src="/img/logo.png" alt="JDLtechworks Logo" /></Link>
             </div>
             <div class="navbar--menu">
               <ul>
                 {adminMenu.map((menu, key) => (
                   <li key={key}>
-                    { menu.menuName !== undefined ? <Link to ={ admin + menu.path}>{menu.menuName}</Link> : ''}
+                    { menu.menu ? <Link to ={ admin + menu.path}>{menu.menuName}</Link> : ''}
                   </li>
                 ))}
               </ul>

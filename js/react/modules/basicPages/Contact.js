@@ -17,7 +17,10 @@ export default class Contact extends React.Component {
     let { disabled } = this.state;
 		return (
 			<section className="main">
-        <div className="main--banner">
+        <div className="main--headings">
+          <div className="main--headings-inner">
+            <h2>Contact Us</h2>
+          </div>
         </div>
 				<div className="main--inner">
 					<div className="main--content contact--page">

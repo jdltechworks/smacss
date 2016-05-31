@@ -19,4 +19,6 @@ export AdminCaseStudies from './Admin/case-studies';
 export EditCaseStudy from './Admin/case-studies/edit';
 export AddCaseStudy from './Admin/case-studies/add';
 
+export NotFound from './Error';
+
 
