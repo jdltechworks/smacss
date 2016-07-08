@@ -43,7 +43,8 @@
 
           &:hover,
           &:active,
-          &:focus {
+          &:focus,
+          .active {
             color: rgba(77, 77, 77, 0.8);
           }
 

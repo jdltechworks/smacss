@@ -7,6 +7,7 @@ export default class Menu extends React.Component {
 	}
 	render() {
 		let { publicMenu } = this.context;
+		console.log(this.props);
 		return (
 	    <header class="header">
 	      <div class="inner">
@@ -19,7 +20,7 @@ export default class Menu extends React.Component {
 	            	<li><Link to="/">Home</Link></li>
 	            	{publicMenu.map((menu, key) => (
 	            		<li key={key}>
-	            			{ menu.menu ? <Link to ={menu.path}>{menu.menuName}</Link> : ''}
+	            			{ menu.menu ? <Link to ={menu.path} activeClassName="active">{menu.menuName}</Link> : ''}
 	            		</li>
 	            	))}
 	            </ul>

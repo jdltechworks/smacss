@@ -19,7 +19,7 @@ export default class AdminMenu extends React.Component {
               <ul>
                 {adminMenu.map((menu, key) => (
                   <li key={key}>
-                    { menu.menu ? <Link to ={ admin + menu.path}>{menu.menuName}</Link> : ''}
+                    { menu.menu ? <Link to ={ admin + menu.path } activeClassName="active">{menu.menuName}</Link> : ''}
                   </li>
                 ))}
               </ul>
