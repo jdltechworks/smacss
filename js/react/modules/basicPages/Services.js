@@ -1,9 +1,19 @@
 import React from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
 
 export default class Services extends React.Component {
 	render() {
 		return (
-			<section className="main">
+        <ReactCSSTransitionGroup
+          component="section"
+          transitionName="route"
+          className="main"
+          transitionEnterTimeout={600}
+          transitionAppearTimeout={600}
+          transitionLeaveTimeout={400}
+          transitionAppear={true}
+        >
         <div className="main--headings">
           <div className="main--headings-inner">
             <h2>Services</h2>
@@ -37,7 +47,7 @@ export default class Services extends React.Component {
             </div>
           </div>
 				</div>
-			</section>
+			</ReactCSSTransitionGroup>
 		);
 	}
 }

@@ -5,6 +5,7 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { lightGreen600, lightGreen700, lightGreen100  } from 'material-ui/styles';
 
+
 const muiTheme = getMuiTheme({
   palette: {
     primary1Color: lightGreen600,
@@ -22,10 +23,10 @@ export default class Layout extends React.Component {
 		let { props } = this;
 		return (
 			<MuiThemeProvider muiTheme={muiTheme}>
-			<div class="page-inner">
-				<Menu {...props}/>
-				{this.props.children}
-			</div>
+				<div className="page--inner">
+					<Menu {...props}/>
+						{this.props.children}
+				</div>
 			</MuiThemeProvider>
 		); 
 	}

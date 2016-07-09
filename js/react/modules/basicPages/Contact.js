@@ -1,6 +1,7 @@
 import React from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 export default class Contact extends React.Component {
   constructor(props) {
@@ -28,7 +29,15 @@ export default class Contact extends React.Component {
       borderWidth: '0 0 2px 0'
     };
 		return (
-			<section className="main">
+        <ReactCSSTransitionGroup
+          component="section"
+          transitionName="route"
+          className="main"
+          transitionEnterTimeout={600}
+          transitionAppearTimeout={600}
+          transitionLeaveTimeout={400}
+          transitionAppear={true}
+        >
         <div className="main--headings">
           <div className="main--headings-inner">
             <h2>Contact Us</h2>
@@ -101,7 +110,7 @@ export default class Contact extends React.Component {
             </div>
           </aside>
         </div>
-			</section>
+			</ReactCSSTransitionGroup>
 		);
 	}
 }

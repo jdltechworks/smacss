@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 export default class FrontPage extends React.Component {
 	render() {
@@ -6,10 +7,18 @@ export default class FrontPage extends React.Component {
 			<div>
 	    <section className="highlighted">
 	      <div className="inner">
-	        <div className="hero-unit landing">
+        <ReactCSSTransitionGroup
+          component="section"
+          transitionName="route"
+          className="hero-unit landing"
+          transitionEnterTimeout={600}
+          transitionAppearTimeout={600}
+          transitionLeaveTimeout={400}
+          transitionAppear={true}
+        >
 	          <h1>Your <span className="slash">Ideas</span> Our Design <span className="slash"> &lt; / &gt; </span> Code</h1>
 	          <h2>Using the Latest and Mostly Used Platform</h2>
-	        </div>
+	        </ReactCSSTransitionGroup>
 	      </div>
 	    </section>
 	    <section className="main">

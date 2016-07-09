@@ -1,7 +1,13 @@
 import React from 'react';
 import Slider from 'react-slick';
+import RaisedButton from 'material-ui/RaisedButton';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
 
 export default class CaseStudies extends React.Component {
+  sendMail(e) {
+    e.preventDefault();
+  }
 	render() {
     let settings = {
       dots: true,
@@ -15,7 +21,16 @@ export default class CaseStudies extends React.Component {
       swipe: false
     };
 		return (
-		<section className="main">
+        <ReactCSSTransitionGroup
+          component="section"
+          transitionName="route"
+          className="main"
+          transitionEnterTimeout={600}
+          transitionAppearTimeout={600}
+          transitionLeaveTimeout={400}
+          transitionAppear={true}
+        >
+      
       <div className="slider">
         <Slider {...settings}>
           <div className="case--studies-carousel">
@@ -63,10 +78,10 @@ export default class CaseStudies extends React.Component {
             <h2>You have a new or existing project?</h2>
             <h3>Get a free quote</h3>
           </div>
-          <a href="#" className="button success">Get A Free Quote</a>
+          <RaisedButton backgroundColor={`#9dbe68`} labelColor="#fff" label="SEND" fullWidth={true} onTouchTap={this.sendMail.bind(this)} />
         </div>
 			</div>
-		</section>
+		</ReactCSSTransitionGroup>
 		);
 	}
 }
