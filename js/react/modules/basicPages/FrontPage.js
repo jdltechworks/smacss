@@ -51,7 +51,7 @@ export default class FrontPage extends React.Component {
 	    		</center>
 
 	    		<p>
-	    			Develop and test the quality of your application.
+	    			Develop and test then deliver the best quality of the application.
 	    		</p>
 	    	</div>
 
@@ -64,42 +64,13 @@ export default class FrontPage extends React.Component {
 	    		</center>
 
 	    		<p>
-	    			Launch the mobile application to your preferred or our best option for your application.
+	    			Launch the application to your preferred or provide the best server for your application.
 	    		</p>
 	    	</div>
 	    </div>
 	    </ReactCSSTransitionGroup>
 	    <section className="main">
 	      <div className="inner">
-	        <div className="articles">
-	          <div className="articles--header">
-	            <h1>Latest Articles</h1>
-	            <h2 className="slash"> &lt; / &gt; </h2>
-	          </div>
-	          <div className="articles--main">
-	            <div className="inner">
-	              <div className="row odd">
-	                <div className="article--category">
-	                <div className="article">
-	                	<h2><a href="">Aliquam in malesuada felis. Morbi egestas interdum condimentum.</a></h2>
-	                	<p>Donec placerat enim vel arcu pharetra convallis. Nulla facilisi. Curabitur congue semper velit in ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar nisi vitae porta gravida. Morbi aliquam magna et turpis efficitur, eu sollicitudin leo vestibulum. Donec sit amet ipsum et est accumsan varius non ut enim. Aenean magna magna, mattis vitae volutpat non, pulvinar at nunc.</p>
-	                	<a href="#">Read more</a>
-	                </div>
-	                <div className="article">
-	                	<h2><a href="">Aliquam in malesuada felis. Morbi egestas interdum condimentum.</a></h2>
-	                	<p>Donec placerat enim vel arcu pharetra convallis. Nulla facilisi. Curabitur congue semper velit in ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar nisi vitae porta gravida. Morbi aliquam magna et turpis efficitur, eu sollicitudin leo vestibulum. Donec sit amet ipsum et est accumsan varius non ut enim. Aenean magna magna, mattis vitae volutpat non, pulvinar at nunc.</p>
-	                	<a href="#">Read more</a>
-	                </div>
-	                <div className="article">
-	                	<h2><a href="">Aliquam in malesuada felis. Morbi egestas interdum condimentum.</a></h2>
-	                	<p>Donec placerat enim vel arcu pharetra convallis. Nulla facilisi. Curabitur congue semper velit in ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar nisi vitae porta gravida. Morbi aliquam magna et turpis efficitur, eu sollicitudin leo vestibulum. Donec sit amet ipsum et est accumsan varius non ut enim. Aenean magna magna, mattis vitae volutpat non, pulvinar at nunc.</p>
-	                	<a href="#">Read more</a>
-	                </div>
-	                </div>
-	              </div>
-	            </div>
-	          </div>
-	        </div>
 	      </div>
 	    </section>
 	    </div>

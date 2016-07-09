@@ -14,15 +14,7 @@ import Layout from './Layout';
 
 import AdminAccess  from './AdminAccess';
 
-export const routes = [
-  {
-    path: '/case-studies',
-    name: 'case-studies',
-    menuName: 'Case Studies',
-    admin: false,
-    menu: true,
-    component: m.CaseStudies
-  }, 
+export const routes = [ 
   {
     path: '/about',
     name: 'about',
@@ -46,13 +38,6 @@ export const routes = [
     menu: true,
     admin: false,
     component: m.Contact
-  },
-  {
-    path: '/case-studies/:slug',
-    name: 'case-studies-by-id',
-    admin: false,
-    menu: false,
-    component: m.CaseStudiesBySlug
   },
   {
     path: '/login',
