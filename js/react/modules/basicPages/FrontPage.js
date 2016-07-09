@@ -39,7 +39,7 @@ export default class FrontPage extends React.Component {
 	    			<h4>Plan</h4>
 	    		</center>
 	    		<p>
-	    			Check your business model and the very best materials and marketing strategies for your web or mobile app.
+	    			Check your business model and use the very best materials and marketing strategies for your web or mobile app.
 	    		</p>
 	    	</div>
 	    	<div class="col-3">
