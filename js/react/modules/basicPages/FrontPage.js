@@ -21,6 +21,54 @@ export default class FrontPage extends React.Component {
 	        </ReactCSSTransitionGroup>
 	      </div>
 	    </section>
+        <ReactCSSTransitionGroup
+          component="section"
+          transitionName="route"
+          className="work-elements"
+          transitionEnterTimeout={600}
+          transitionAppearTimeout={600}
+          transitionLeaveTimeout={400}
+          transitionAppear={true}
+        >
+	    <div className="work-elements-inner clearfix">
+	    	<div class="col-3">
+	    		<center>
+		    		<h2>
+		    			<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+		    		</h2>
+	    			<h4>Plan</h4>
+	    		</center>
+	    		<p>
+	    			Check your business model and the very best materials and marketing strategies for your web or mobile app.
+	    		</p>
+	    	</div>
+	    	<div class="col-3">
+	    		<center>
+		    		<h2>
+		    			<i class="fa fa-wrench" aria-hidden="true"></i>
+		    			<h4>Develop</h4>
+		    		</h2>
+	    		</center>
+
+	    		<p>
+	    			Develop and test the quality of your application.
+	    		</p>
+	    	</div>
+
+	    	<div class="col-3">
+	    		<center>
+		    		<h2>
+		    			<i class="fa fa-rocket" aria-hidden="true"></i>
+		    			<h4>Launch</h4>
+		    		</h2>
+	    		</center>
+
+	    		<p>
+	    			Launch the mobile application to your preferred or our best option for your application.
+	    		</p>
+	    	</div>
+	    </div>
+	    </ReactCSSTransitionGroup>
 	    <section className="main">
 	      <div className="inner">
 	        <div className="articles">

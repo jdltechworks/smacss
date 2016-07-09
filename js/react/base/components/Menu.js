@@ -5,6 +5,10 @@ export default class Menu extends React.Component {
 	static contextTypes = {
 		publicMenu: React.PropTypes.array
 	}
+	hoverEffect(e) {
+		document.querySelector('li.magic-line').style.left = e.currentTarget.offsetLeft + 'px';
+		document.querySelector('li.magic-line').style.width = e.currentTarget.offsetWidth + 'px';
+	}
 	render() {
 		let { publicMenu } = this.context;
 		console.log(this.props);
@@ -17,12 +21,11 @@ export default class Menu extends React.Component {
 	          </div>
 	          <div class="navbar--menu">
 	            <ul>
-	            	<li><Link to="/">Home</Link></li>
-	            	{publicMenu.map((menu, key) => (
-	            		<li key={key}>
-	            			{ menu.menu ? <Link to ={menu.path} activeClassName="active">{menu.menuName}</Link> : ''}
-	            		</li>
-	            	))}
+	            	<li onMouseEnter={this.hoverEffect.bind(this)}><Link to="/">Home</Link></li>
+	            	{publicMenu.map((menu, key) => {
+	            		return menu.menu ? <li key={key} onMouseEnter={this.hoverEffect.bind(this)}> <Link to ={menu.path} activeClassName="active">{menu.menuName}</Link></li>: '';
+	            	})}
+	            	<li className="magic-line"></li>
 	            </ul>
 	          </div>
 	        </nav>

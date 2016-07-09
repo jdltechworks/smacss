@@ -5,7 +5,7 @@
 
   &.landing {
     background: url("../img/hero/hero-landing.png") no-repeat fixed center top transparent;
-    padding: 5% 0 10%;
+    padding: 5% 0 15%;
 
     @include clearfix;
   }
@@ -16,7 +16,7 @@
     letter-spacing: 2px;
     font-size: 40px;
     text-align: center;
-    margin: 6% 0;
+    margin: 4% 0 2.5%;
 
     span.slash {
       color: #9dbe68;
@@ -25,7 +25,7 @@
 
   & h2 {
     font-family: quickSandRegular;
-    font-size: 40px;
+    font-size: 33px;
     text-align: center;
     color: #666;
   }

@@ -63,6 +63,9 @@
   &--branding {
     text-align: center;
     margin-bottom: 15px;
+    img {
+      display: inline;
+    }
 
     .copyright {
       margin: 0;

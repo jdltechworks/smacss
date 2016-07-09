@@ -2,13 +2,13 @@
   @include layout(12 fluid 0.35 float inside);
 
   @include clearfix;
-
+  
   position: fixed;
   background: #fff;
   width: 100%;
   border-bottom: 1px solid #e6e6e6;
   z-index: 1000;
-
+  
 
   &--brand {
     @include span(4);
@@ -26,17 +26,15 @@
 
   &--menu {
     @include span(8);
+    padding: 0;
+    position: relative;
     > ul {
       float: right;
       font-size: 0;
-      > li {
+      > li:not(.magic-line) {
         display: table-cell;
         font-size: 0;
-        position: relative;
-
-
         a {
-          @include rtlUnderlineEffect;
           color: rgba(77, 77, 77, 0.8);
           padding: 25px 35px;
           font-family: orbitronMedium;
@@ -53,6 +51,12 @@
           }
         }
       }
+      li.magic-line {
+        position: absolute;
+        border-bottom: 4px solid #9dbe68;
+        transition:all 0.3s ease;
+        left: 0;
+        }
     }
   }
 }

@@ -1,0 +1,36 @@
+.work-elements {
+	@include layout(12 fluid 0 float inside);
+	@include clearfix;
+	position: relative;
+	margin-bottom: 0;
+	padding-bottom: 20%;
+	background: #f2f2f2;
+	&-inner {
+		@include clearfix;
+		@include squish(1);
+		position: absolute;
+		background: #fff;
+		bottom: 27%;
+		.col-3 {
+			@include span(4);
+			padding: 40px 25px 50px;
+			font-family: Roboto Regular;
+			h2 {
+				i {
+					color: #9dbe68;
+					font-size: 50px;
+				}
+			}
+			h4 {
+				font-size: 22px;
+				font-family: quickSandRegular;
+				font-weight: bold;
+			}
+			p {
+				opacity: .85;
+				letter-spacing: 1.5px;
+				line-height: 1.7;
+			}
+		}
+	}
+}
