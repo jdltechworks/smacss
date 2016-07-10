@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import RaisedButton from 'material-ui/RaisedButton';
 
 export default class FrontPage extends React.Component {
 	render() {
@@ -67,6 +68,10 @@ export default class FrontPage extends React.Component {
 	    			Launch the application to your preferred or provide the best server for your application.
 	    		</p>
 	    	</div>
+	    <div className="free-quote">
+	    	<h4>Get a free quote <RaisedButton backgroundColor={`#9dbe68`} labelColor="#fff" label="SEND" fullWidth={false} href="/contact" />
+</h4>
+	    </div>
 	    </div>
 	    </ReactCSSTransitionGroup>
 	    <section className="main">
