@@ -37,8 +37,8 @@ export default class FrontPage extends React.Component {
 	    		<center>
 		    		<h2>
 		    			<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+		    			<h4>Plan</h4>
 		    		</h2>
-	    			<h4>Plan</h4>
 	    		</center>
 	    		<p>
 	    			Check your business model and use the very best materials and marketing strategies for your web or mobile app.
