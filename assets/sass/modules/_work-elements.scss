@@ -3,14 +3,23 @@
 	@include clearfix;
 	position: relative;
 	margin-bottom: 0;
-	padding-bottom: 20%;
+	padding-bottom: 40%;
 	background: #f2f2f2;
 	&-inner {
 		@include clearfix;
 		@include squish(1);
 		position: absolute;
 		background: #fff;
-		bottom: 0%;
+		bottom: 40%;
+		center {
+			h2 {
+		    font-family: orbitronMedium;
+		    color: #666;
+		    letter-spacing: 2px;
+		    font-size: 30px;
+		    margin: 2em auto 1.5em;
+			}
+		}
 		.col-3 {
 			@include span(4);
 			padding: 40px 25px 50px;

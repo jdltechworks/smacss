@@ -5,7 +5,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 export default class FrontPage extends React.Component {
 	render() {
 		return(
-			<div>
+			<div className="landing--page">
 	    <section className="highlighted">
 	      <div className="inner">
         <ReactCSSTransitionGroup
@@ -32,6 +32,7 @@ export default class FrontPage extends React.Component {
           transitionAppear={true}
         >
 	    <div className="work-elements-inner clearfix">
+	    <center><h2>How we work</h2></center>
 	    	<div class="col-3">
 	    		<center>
 		    		<h2>
@@ -68,16 +69,8 @@ export default class FrontPage extends React.Component {
 	    			Launch the application to your preferred or provide the best server for your application.
 	    		</p>
 	    	</div>
-	    <div className="free-quote">
-	    	<div className="inner">
-	    	<h4>GET A FREE QUOTE <RaisedButton backgroundColor={`#9dbe68`} labelColor="#fff" label="SEND" fullWidth={false} href="/contact" /></h4></div>
-	    </div>
 	    </div>
 	    </ReactCSSTransitionGroup>
-	    <section className="main">
-	      <div className="inner">
-	      </div>
-	    </section>
 	    </div>
 		);
 	}

@@ -1,11 +1,12 @@
 .team--container {
-@include layout(12 0 fluid float inside);
+  @include layout(12 0 fluid float inside);
+  margin-top: 10%;
   .team--member {
     @include span(6);
     @include clearfix;
     position: relative;
     text-align: center;
-    padding: 0 5% 5%;
+    padding: 5% 5% 5%;
     margin-bottom: 5%;
     img {
       display: inline;

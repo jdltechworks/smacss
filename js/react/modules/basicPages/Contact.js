@@ -29,21 +29,37 @@ export default class Contact extends React.Component {
       borderWidth: '0 0 2px 0'
     };
 		return (
-        <ReactCSSTransitionGroup
-          component="section"
-          transitionName="route"
-          className="main"
-          transitionEnterTimeout={600}
-          transitionAppearTimeout={600}
-          transitionLeaveTimeout={400}
-          transitionAppear={true}
-        >
+      <section className="main">
         <div className="main--headings">
           <div className="main--headings-inner">
             <h2>Contact Us</h2>
           </div>
         </div>
-				<div className="main--inner">
+				<ReactCSSTransitionGroup
+          component="div"
+          transitionName="route"
+          className="main--inner"
+          transitionEnterTimeout={600}
+          transitionAppearTimeout={600}
+          transitionLeaveTimeout={400}
+          transitionAppear={true}
+        >
+          <aside className="sidebar">
+            <div className="sidebar--items">
+              <div className="sidebar--series-menu">
+                <h2>Address</h2>
+                <ul>
+                  <li><a href="#">78 Veloso St. Bo. Obrero Davao City 8000</a></li>
+                </ul>
+              </div>
+              <div className="sidebar--series-menu">
+                <h2>Phone</h2>
+                <ul>
+                  <li><a href="#">+6382-305-7453</a></li>
+                </ul>
+              </div>
+            </div>
+          </aside>
 					<div className="main--content contact--page">
             <div class="contact--page-form">
               <form className="contact--form">
@@ -93,24 +109,8 @@ export default class Contact extends React.Component {
               </form>
             </div>
           </div>
-          <aside className="sidebar">
-            <div className="sidebar--items">
-              <div className="sidebar--series-menu">
-                <h2>Address</h2>
-                <ul>
-                  <li><a href="#">78 Veloso St. Bo. Obrero Davao City 8000</a></li>
-                </ul>
-              </div>
-              <div className="sidebar--series-menu">
-                <h2>Phone</h2>
-                <ul>
-                  <li><a href="#">+6382-305-7453</a></li>
-                </ul>
-              </div>
-            </div>
-          </aside>
-        </div>
-			</ReactCSSTransitionGroup>
+        </ReactCSSTransitionGroup>
+      </section>
 		);
 	}
 }
