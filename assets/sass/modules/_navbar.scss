@@ -1,13 +1,12 @@
 .navbar {
   @include layout(12 fluid 0.35 float inside);
-
-  @include clearfix;
   border-bottom: 1px solid #e6e6e6;
+  line-height: 1.8;
+  @include clearfix;
   padding: 0px 0 3px;
   position: fixed;
   background: #fff;
   width: 100%;
-  border: none;
   z-index: 1000;
   
 
@@ -38,7 +37,7 @@
         font-size: 0;
         a {
           color: rgba(77, 77, 77, 0.8);
-          padding: 25px 37px;
+          padding: 27px 37px;
           font-family: orbitronMedium;
           border: none;
 

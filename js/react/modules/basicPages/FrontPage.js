@@ -69,8 +69,8 @@ export default class FrontPage extends React.Component {
 	    		</p>
 	    	</div>
 	    <div className="free-quote">
-	    	<h4>Get a free quote <RaisedButton backgroundColor={`#9dbe68`} labelColor="#fff" label="SEND" fullWidth={false} href="/contact" />
-</h4>
+	    	<div className="inner">
+	    	<h4>GET A FREE QUOTE <RaisedButton backgroundColor={`#9dbe68`} labelColor="#fff" label="SEND" fullWidth={false} href="/contact" /></h4></div>
 	    </div>
 	    </div>
 	    </ReactCSSTransitionGroup>

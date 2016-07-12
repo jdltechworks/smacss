@@ -1,26 +1,25 @@
-.team--member {
-  @include clearfix;
-  position: relative;
-  padding-bottom: 5%;
-  margin-bottom: 5%;
-  img {
-    position: absolute;
-    top: -6%;
-    left: -1%;
-    border: 2px solid #fff;
-    box-shadow: 0 0 3px 1px #ddd;
-    border-radius: 100%;
-    padding: 6px;
-    background: #fff;
-  }
-  h2 {
-    text-align: right;
-    border-bottom: 5px solid #9dbe68;
-    padding: 15px 0;
-  }
-  p {
-    padding-top: 4%;
-    padding-left: 5%;
-    padding-bottom: 6%;
+.team--container {
+@include layout(12 0 fluid float inside);
+  .team--member {
+    @include span(6);
+    @include clearfix;
+    position: relative;
+    text-align: center;
+    padding: 0 5% 5%;
+    margin-bottom: 5%;
+    img {
+      display: inline;
+      border-radius: 100%;
+    }
+    h2 {
+      padding: 15px 0;
+    }
+    p {
+      padding-top: 4%;
+      padding-left: 5%;
+      padding-bottom: 6%;
+      text-align: left;
+      line-height: 1.5;
+    }
   }
 }
