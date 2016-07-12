@@ -11,7 +11,6 @@ export default class Menu extends React.Component {
 	}
 	render() {
 		let { publicMenu } = this.context;
-		console.log(this.props);
 		return (
 	    <header class="header">
 	      <div class="inner">
