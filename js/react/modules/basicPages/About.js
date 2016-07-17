@@ -37,7 +37,7 @@ export default class About extends React.Component {
             </div>
             <div class="team--member">
               <img src="http://dummyimage.com/120x120/000/fff.png" />
-              <h2>Jeu Guarino</h2>
+              <h2>Neil John Gonzaga</h2>
               <h4>Full Stack JS Developer</h4>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
               <ul class="social social-circle">
