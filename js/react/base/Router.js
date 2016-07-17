@@ -18,7 +18,7 @@ export const routes = [
   {
     path: '/about',
     name: 'about',
-    menuName: 'The Crew',
+    menuName: 'Our Team',
     admin: false,
     menu: true,
     component: m.About

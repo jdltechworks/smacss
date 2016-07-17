@@ -19,4 +19,38 @@
       }
     }
   }
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    a {
+      font-size: 20px;
+      display: table;
+      width: 40px;
+      height: 40px;
+      margin: 0 4px;
+      i {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+  &-circle {
+    a {
+      background: #9dbe68;
+      color: #fff;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+    }
+  }
 }
+
+

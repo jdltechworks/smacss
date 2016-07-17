@@ -4,9 +4,12 @@
   .team--member {
     @include span(6);
     @include clearfix;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
     position: relative;
     text-align: center;
-    padding: 5% 5% 5%;
+    padding: 5% 8%;
     margin-bottom: 5%;
     img {
       display: inline;
@@ -16,9 +19,7 @@
       padding: 15px 0;
     }
     p {
-      padding-top: 4%;
-      padding-left: 5%;
-      padding-bottom: 6%;
+      padding: 4% 5% 6%;
       text-align: left;
       line-height: 1.5;
     }

@@ -16,36 +16,56 @@ export default class About extends React.Component {
           transitionAppear={true}
         >
         <div className="main--banner-content-inner">
-            <h2>The Crew</h2>
-            <p>is the master mind of dope warfare Curabitur non lectus tellus. Aenean a augue facilisis, dignissim odio ac, commodo arcu. Sed nec ultrices erat, in porttitor leo. Donec non arcu sed dui sagittis mollis eget quis metus. Ut tempor sit amet ipsum vel congue. Nunc fermentum purus sem, et placerat mauris malesuada non. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed et tellus at quam sodales mollis. Fusce mi ipsum, ultricies non molestie id, faucibus at eros. Maecenas ac urna id justo tempus ullamcorper. Praesent tincidunt elit a nibh accumsan, vel fringilla eros tristique.</p>
+            <h2>Our Team</h2>
+            <p></p>
         </div>
         </ReactCSSTransitionGroup>
         </div>
         <div className="main--inner">
           <div className="team--container">
             <div class="team--member">
-              <img src="http://dummyimage.com/150x150/000/fff.png" />
+              <img src="http://dummyimage.com/120x120/000/fff.png" />
               <h2>Jose Lo Jr.</h2>
               <h4>Full Stack JS Developer</h4>
-              <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed et tellus at quam sodales mollis. Fusce mi ipsum, ultricies non molestie id, faucibus at eros. Maecenas ac urna id justo tempus ullamcorper. Praesent tincidunt elit a nibh accumsan, vel fringilla eros tristique.</p>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+              <ul class="social social-circle">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+              </ul>
             </div>
             <div class="team--member">
-              <img src="http://dummyimage.com/150x150/000/fff.png" />
+              <img src="http://dummyimage.com/120x120/000/fff.png" />
               <h2>Jeu Guarino</h2>
               <h4>Full Stack JS Developer</h4>
-              <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed et tellus at quam sodales mollis. Fusce mi ipsum, ultricies non molestie id, faucibus at eros. Maecenas ac urna id justo tempus ullamcorper. Praesent tincidunt elit a nibh accumsan, vel fringilla eros tristique.</p>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+              <ul class="social social-circle">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+              </ul>
             </div>
             <div class="team--member">
-              <img src="http://dummyimage.com/150x150/000/fff.png" />
+              <img src="http://dummyimage.com/120x120/000/fff.png" />
               <h2>Jose Maria Jocom</h2>
               <h4>Project Manager</h4>
-              <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed et tellus at quam sodales mollis. Fusce mi ipsum, ultricies non molestie id, faucibus at eros. Maecenas ac urna id justo tempus ullamcorper. Praesent tincidunt elit a nibh accumsan, vel fringilla eros tristique.</p>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+              <ul class="social social-circle">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+              </ul>
             </div>
             <div class="team--member">
-              <img src="http://dummyimage.com/150x150/000/fff.png" />
+              <img src="http://dummyimage.com/120x120/000/fff.png" />
               <h2>Michael Landas</h2>
               <h4>Graphics</h4>
-              <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed et tellus at quam sodales mollis. Fusce mi ipsum, ultricies non molestie id, faucibus at eros. Maecenas ac urna id justo tempus ullamcorper. Praesent tincidunt elit a nibh accumsan, vel fringilla eros tristique.</p>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+              <ul class="social social-circle">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+              </ul>
             </div>
           </div>
 				</div>
