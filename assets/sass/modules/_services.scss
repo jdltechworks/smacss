@@ -2,12 +2,21 @@
 	&--container {
 		@include clearfix;
 		@include layout(12 0 fluid float inside);
-		margin-top: 10%;
+		margin-top: 5%;
 	}
 	@include span(6);
-	padding-right: 5%;
+	padding-right: 2.5%;
 	padding-bottom: 5%;
+	position: relative;
+	padding-left: 9%;
+	i {
+		position: absolute;
+		font-size: 4rem;
+		left: 0;
+		color: #9dbe68;
+	}
 	h2 {
 		margin-bottom: 1.7em;
+		margin-top: 15px;
 	}
 }

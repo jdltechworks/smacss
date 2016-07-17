@@ -50,7 +50,7 @@ export default class Contact extends React.Component {
             <p>Curabitur nunc orci, aliquet vitae odio eu, euismod consequat ipsum. Nam urna leo, dignissim quis risus ut, consequat mollis erat. Duis nisl risus, ultricies nec lobortis non, euismod id sapien. Donec sodales venenatis viverra. Nulla accumsan </p>
           </div>
           <div className="col-6 contact--details">
-            <h2>Contact Details:</h2>
+            <h2>Contact Details</h2>
             <ul>
               <li><i className="fa fa-home"></i> <span>78 Veloso St. Bo. Obrero Davao City Philippines 8000</span></li>
               <li><i className="fa fa-phone"></i> <span>(+63) 305-7453</span></li>
@@ -59,7 +59,7 @@ export default class Contact extends React.Component {
           </div>
   					<div className="col-6 contact--page">
               <div class="contact--page-form">
-                <h2>Contact Form</h2>
+                <h2>Email Us</h2>
                 <form className="contact--form">
                 <div className="col-6 input-gutter">
                   <TextField 

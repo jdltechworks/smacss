@@ -4,24 +4,25 @@ export default class About extends React.Component {
 	render() {
 		return (
       <section className="main">
-        <div className="main--banner clearfix">
-          <img src="//placeimg.com/1000/582/tech" />
+        <div className="main--headings">
+          <div className="main--headings-inner">
+            <h2>Our Team</h2>
+          </div>
+        </div>
+        <div className="main--inner">
         <ReactCSSTransitionGroup
           component="div"
           transitionName="route"
-          className="main--banner-content"
+          className="main-content"
           transitionEnterTimeout={600}
           transitionAppearTimeout={600}
           transitionLeaveTimeout={400}
           transitionAppear={true}
         >
-        <div className="main--banner-content-inner">
-            <h2>Our Team</h2>
-            <p></p>
-        </div>
-        </ReactCSSTransitionGroup>
-        </div>
-        <div className="main--inner">
+          <div class="col-12 contact--headings">
+            <h2><i class="fa fa-group"></i></h2>
+            <p>Curabitur nunc orci, aliquet vitae odio eu, euismod consequat ipsum. Nam urna leo, dignissim quis risus ut, consequat mollis erat. Duis nisl risus, ultricies nec lobortis non, euismod id sapien. Donec sodales venenatis viverra. Nulla accumsan </p>
+          </div>
           <div className="team--container">
             <div class="team--member">
               <img src="http://dummyimage.com/120x120/000/fff.png" />
@@ -68,6 +69,7 @@ export default class About extends React.Component {
               </ul>
             </div>
           </div>
+          </ReactCSSTransitionGroup>
 				</div>
 			</section>
 		);

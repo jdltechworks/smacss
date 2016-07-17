@@ -1,6 +1,6 @@
 .team--container {
   @include layout(12 0 fluid float inside);
-  margin-top: 10%;
+  margin-top: 5%;
   .team--member {
     @include span(6);
     @include clearfix;
