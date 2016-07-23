@@ -17,9 +17,9 @@ export default class Menu extends React.Component {
 	          </div>
 	          <div class="navbar--menu">
 	            <ul>
-	            	<li onMouseEnter={this.hoverEffect.bind(this)} onClick={toScroll.bind(this, 'landing-page')}><Link to="/">Home</Link></li>
+	            	<li><a onClick={toScroll.bind(this, 'landing-page')}>Home</a></li>
 	            	{publicMenu.map((menu, key) => {
-	            		return menu.menu ? <li key={key} onClick={toScroll.bind(this, menu.name)}> <a href="#">{menu.menuName}</a></li>: '';
+	            		return menu.menu ? <li key={key}> <a onClick={toScroll.bind(this, menu.name)} href="#">{menu.menuName}</a></li>: '';
 	            	})}
 	            	<li className="magic-line"></li>
 	            </ul>
