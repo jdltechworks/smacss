@@ -4,13 +4,9 @@
 	position: relative;
 	margin-bottom: 0;
 	padding-bottom: 40%;
-	background: #9dbe68;
 	&-inner {
 		@include clearfix;
 		@include squish(1);
-		position: absolute;
-		background: #fff;
-		bottom: 40%;
 		center {
 			h2 {
 		    font-family: orbitronMedium;

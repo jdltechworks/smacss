@@ -25,7 +25,7 @@ export const routes = [
   },
   { 
     path: '/services',
-    name: 'services',
+    name: 'services-page',
     menuName: 'Services',
     admin: false,
     menu: true,
@@ -125,16 +125,8 @@ class Routings extends React.Component {
       <Router history={browserHistory}>
         <Route path="/" component={Layout}>
           <IndexRoute name="front-page" component={m.FrontPage}></IndexRoute>
-          {routes.map((route, index) => (
-            <Route key={index} name={route.name} path={route.path} component={route.component}></Route>
-          ))}
         </Route>
-        <Route name="admin-access" path={admin} component={AdminAccess}>
-          <IndexRoute name="admin-front-page" component={m.Dashboard}></IndexRoute>
-          {restrictedRoutes.map((route, index) =>(
-            <Route key={index} name={route.name} onEnter={route.onEnter} path={admin + route.path} component={route.component}></Route> 
-          ))}
-        </Route>
+
         <Route name="not-found" path="*" component={m.NotFound}></Route>
       </Router>
     );

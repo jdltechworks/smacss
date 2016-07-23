@@ -3,7 +3,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 export default class About extends React.Component {
 	render() {
 		return (
-      <section className="main">
+      <section id="about" className="main about">
         <div className="main--headings">
           <div className="main--headings-inner">
             <h2>Our Team</h2>

@@ -5,7 +5,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 export default class FrontPage extends React.Component {
 	render() {
 		return(
-			<div className="landing--page">
+			<div id="landing-page" className="landing--page front-page">
 	    <section className="highlighted">
 	      <div className="inner">
         <ReactCSSTransitionGroup

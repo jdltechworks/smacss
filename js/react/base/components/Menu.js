@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router";
+import $ from 'jquery';
 
 export default class Menu extends React.Component {
 	static contextTypes = {
@@ -20,9 +21,9 @@ export default class Menu extends React.Component {
 	          </div>
 	          <div class="navbar--menu">
 	            <ul>
-	            	<li onMouseEnter={this.hoverEffect.bind(this)}><Link to="/">Home</Link></li>
+	            	<li onMouseEnter={this.hoverEffect.bind(this)} onClick={toScroll.bind(this, 'landing-page')}><Link to="/">Home</Link></li>
 	            	{publicMenu.map((menu, key) => {
-	            		return menu.menu ? <li key={key} onMouseEnter={this.hoverEffect.bind(this)}> <Link to ={menu.path} activeClassName="active">{menu.menuName}</Link></li>: '';
+	            		return menu.menu ? <li key={key} onClick={toScroll.bind(this, menu.name)} onMouseEnter={this.hoverEffect.bind(this)}> <a href="#">{menu.menuName}</a></li>: '';
 	            	})}
 	            	<li className="magic-line"></li>
 	            </ul>
@@ -33,3 +34,11 @@ export default class Menu extends React.Component {
 		);
 	}
 }
+
+const	toScroll = (content, e) => {
+	e.preventDefault();		
+	let targetY = document.getElementById(content).offsetTop;
+	$('html,body').animate({
+	  scrollTop: targetY - 76
+	}, 600, 'swing');
+};

@@ -78,6 +78,9 @@ a:after {
 
 a:not(:active):after {
   animation: ripple .2s ease-out;
+  @include max-screen(724px) {
+    animation: none;
+  }
 }
 
 /* fixes initial animation run, without user input, on page load.

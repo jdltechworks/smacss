@@ -8,6 +8,8 @@
   background: #fff;
   width: 100%;
   z-index: 1000;
+  margin: 0;
+  padding: 0;
   
 
   &--brand {
@@ -59,6 +61,32 @@
         transition:all 0.3s ease;
         left: 0;
         }
+    }
+  }
+}
+
+@include mq($max-width: 724px) {
+  .navbar {
+    position: inherit;
+    &--brand {
+      @include span(12);
+      text-align: left;
+      border-bottom: 1px solid #e6e6e6;
+    }
+    &--menu {
+      @include span(12);
+      @include gutters(0%);
+      position: relative;
+      ul {
+        float: none;
+        > li:not(.magic-line) {
+          display: block;
+          border-bottom: 1px solid #e6e6e6;
+        }
+        li.magic-line {
+          display: none;
+        }
+      }
     }
   }
 }

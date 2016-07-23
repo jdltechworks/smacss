@@ -5,7 +5,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 export default class Services extends React.Component {
 	render() {
 		return (
-      <section className="main">
+      <section id="services-page" className="main services-page">
         <div className="main--headings">
           <div className="main--headings-inner">
             <h2>Services</h2>

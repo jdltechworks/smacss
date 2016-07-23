@@ -4,7 +4,14 @@ import Footer from './components/Footer';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { lightGreen600, lightGreen700, lightGreen100  } from 'material-ui/styles';
+import * as m from '../modules';
 
+let {
+	FrontPage,
+	About,
+	Services,
+	Contact
+} = m;
 
 const muiTheme = getMuiTheme({
   palette: {
@@ -25,7 +32,10 @@ export default class Layout extends React.Component {
 			<MuiThemeProvider muiTheme={muiTheme}>
 				<div className="page--inner">
 					<Menu {...props}/>
-						{this.props.children}
+					<FrontPage {...props}/>
+					<About {...props}/>
+					<Services {...props}/>
+					<Contact {...props}/>
 				</div>
 			</MuiThemeProvider>
 		); 

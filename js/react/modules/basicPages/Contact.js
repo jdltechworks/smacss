@@ -29,7 +29,7 @@ export default class Contact extends React.Component {
       borderWidth: '0 0 2px 0'
     };
 		return (
-      <section className="main">
+      <section id="contact" className="main contact">
         <div className="main--headings">
           <div className="main--headings-inner">
             <h2>Get in Touch</h2>
