@@ -3,17 +3,25 @@
 	@include clearfix;
 	position: relative;
 	margin-bottom: 0;
-	padding-bottom: 40%;
+	&-header {
+		width: 15em;
+		border-top: 1px solid #e6e6e6;
+		border-bottom: 1px solid #e6e6e6;
+		padding: 1em 0;
+	}
 	&-inner {
 		@include clearfix;
 		@include squish(1);
 		center {
 			h2 {
-		    font-family: orbitronMedium;
-		    color: #666;
+		    font-family: OpenSansRegular;
+		    color: #000;
 		    letter-spacing: 2px;
 		    font-size: 30px;
-		    margin: 2em auto 1.5em;
+		    margin: 4em auto 4.5em;
+		    span {
+		    	color: #a0ce4e;
+		    }
 			}
 		}
 		.col-3 {
@@ -23,7 +31,7 @@
 			h2 {
 				margin: 0;
 				i {
-					color: #9dbe68;
+					color: #a0ce4e;
 					font-size: 50px;
 				}
 			}

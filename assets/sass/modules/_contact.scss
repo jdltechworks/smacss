@@ -12,10 +12,11 @@
 					position: absolute;
 					left: 0;
 					top: 0;
-					color: #9dbe68;
+					color: #a0ce4e;
 				}
 				span {
-					opacity: .7;
+					opacity: 1;
+					color: #000;
 				}
 			}
 		}	
@@ -60,6 +61,9 @@
     	i {
     		color: #9dbe68;
     	}
+ 			span {
+				color: #a0ce4e;
+			}
 		}
 	}
 }

@@ -5,8 +5,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 export default class Contact extends React.Component {
   constructor(props) {
-    super(props);
-    this.state = {
+    super(props);    this.state = {
       disabled: false
     }
   }
@@ -20,19 +19,19 @@ export default class Contact extends React.Component {
       width: '100%'
     };
     let floatLabel = {
-      color: '#999'
+      color: '#000'
     };
     
     let inputFocus = {
       border: '2px solid',
-      borderColor: '#9dbe68',
+      borderColor: '#a0ce4e',
       borderWidth: '0 0 2px 0'
     };
 		return (
       <section id="contact" className="main contact">
         <div className="main--headings">
           <div className="main--headings-inner">
-            <h2>Get in Touch</h2>
+            <h2>GET <span>IN TOUCHED</span></h2>
           </div>
         </div>
 				<ReactCSSTransitionGroup
@@ -45,12 +44,8 @@ export default class Contact extends React.Component {
           transitionAppear={true}
         >
           <div className="contact--container">
-          <div className="col-12 contact--headings">
-            <h2><i className="fa fa-phone"></i></h2>
-            <p>Curabitur nunc orci, aliquet vitae odio eu, euismod consequat ipsum. Nam urna leo, dignissim quis risus ut, consequat mollis erat. Duis nisl risus, ultricies nec lobortis non, euismod id sapien. Donec sodales venenatis viverra. Nulla accumsan </p>
-          </div>
           <div className="col-6 contact--details">
-            <h2>Contact Details</h2>
+            <h2>Contact <span>Details</span></h2>
             <ul>
               <li><i className="fa fa-home"></i> <span>78 Veloso St. Bo. Obrero Davao City Philippines 8000</span></li>
               <li><i className="fa fa-phone"></i> <span>(+63) 305-7453</span></li>
@@ -59,7 +54,7 @@ export default class Contact extends React.Component {
           </div>
   					<div className="col-6 contact--page">
               <div class="contact--page-form">
-                <h2>Email Us</h2>
+                <h2>Email <span>Us</span></h2>
                 <form className="contact--form">
                 <div className="col-6 input-gutter">
                   <TextField 
@@ -107,7 +102,7 @@ export default class Contact extends React.Component {
                       />
                   <br />
 
-                  <RaisedButton backgroundColor={`#9dbe68`} labelColor="#fff" label="SEND" fullWidth={true} onTouchTap={this.sendMail.bind(this)} />
+                  <RaisedButton backgroundColor={`#a0ce4e`} labelColor="#fff" label="SEND" fullWidth={true} onTouchTap={this.sendMail.bind(this)} />
                 </form>
               </div>
             </div>

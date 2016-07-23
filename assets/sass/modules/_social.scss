@@ -1,23 +1,7 @@
 .social {
   &--icons {
     @include clearfix;
-
-    ul {
-      text-align: center;
-
-      li {
-        display: inline-table;
-
-        a {
-          display: block;
-          padding: 10px 5px;
-
-          &:hover {
-            opacity: 0.8;
-          }
-        }
-      }
-    }
+    text-align: center;
   }
   padding: 0;
   margin: 0;
@@ -35,6 +19,7 @@
       width: 40px;
       height: 40px;
       margin: 0 4px;
+      text-align: center;
       i {
         display: table-cell;
         vertical-align: middle;
@@ -43,7 +28,7 @@
   }
   &-circle {
     a {
-      background: #9dbe68;
+      background: #a0ce4e;
       color: #fff;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;

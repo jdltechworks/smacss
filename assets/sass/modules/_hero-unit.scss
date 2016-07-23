@@ -5,29 +5,40 @@
 
   &.landing {
     background: url("../img/hero/hero-landing.png") no-repeat fixed center top transparent;
-    padding: 5% 0 15%;
+    padding: 13% 0 15%;
+    background-size: 100% 100%;
 
     @include clearfix;
   }
-
+  &-btn {
+    padding: 5px 25px;
+    background: #a0ce4e;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-table;
+    font-size: 20px;
+    border-radius: 5px; 
+  }
   & h1 {
     font-family: orbitronMedium;
-    color: #666;
-    letter-spacing: 2px;
+    color: #fff;
+    letter-spacing: 5px;
     font-size: 40px;
     text-align: center;
     margin: 4% 0 2.5%;
 
     span.slash {
-      color: #9dbe68;
+      color: #a0ce4e;
     }
   }
 
   & h2 {
-    font-family: quickSandRegular;
+    font-family: Roboto;
+    letter-spacing: 2px;
     font-size: 33px;
     text-align: center;
-    color: #666;
+    color: #fff;
+    margin-bottom: 1.5em;
   }
 
   &--icon-container {

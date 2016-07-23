@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import RaisedButton from 'material-ui/RaisedButton';
+import { toScroll } from '../../base/components/Menu';
 
 export default class FrontPage extends React.Component {
 	render() {
@@ -19,6 +20,9 @@ export default class FrontPage extends React.Component {
         >
 	          <h1>Your <span className="slash">Ideas</span> Our Design <span className="slash"> &lt; / &gt; </span> Code</h1>
 	          <h2>Using the Latest and Mostly Used Platform</h2>
+	          <center>
+	          	<a className="hero-unit-btn" href="#" onClick={toScroll.bind(this, 'contact')}>LEARN MORE</a>
+	        	</center>
 	        </ReactCSSTransitionGroup>
 	      </div>
 	    </section>
@@ -32,7 +36,7 @@ export default class FrontPage extends React.Component {
           transitionAppear={true}
         >
 	    <div className="work-elements-inner clearfix">
-	    <center><h2>How we work</h2></center>
+	    <center><h2 className="work-elements-header">HOW <span>WE WORK</span></h2></center>
 	    	<div class="col-3">
 	    		<center>
 		    		<h2>
@@ -68,6 +72,16 @@ export default class FrontPage extends React.Component {
 	    		<p>
 	    			Launch the application to your preferred or provide the best server for your application.
 	    		</p>
+	    	</div>
+	    </div>
+	    <div className="inquiry-banner">
+	    	<div className="inner">
+	    		<div className="col-8">
+	    			<h2>Want a modern website using the latest platform?</h2>
+	    		</div>
+	    		<div className="col-4">
+	    			<a href="#" onClick={toScroll.bind(this, 'contact')}>CONTACT US NOW</a>
+	    		</div>
 	    	</div>
 	    </div>
 	    </ReactCSSTransitionGroup>

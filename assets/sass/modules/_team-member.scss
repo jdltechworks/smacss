@@ -1,27 +1,41 @@
 .team--container {
   @include layout(12 0 fluid float inside);
-  margin-top: 5%;
   .team--member {
-    @include span(6);
+    @include span(3);
     @include clearfix;
     box-sizing: border-box;
-    width: 50%;
     float: left;
     position: relative;
     text-align: center;
-    padding: 5% 8%;
+    padding: 5% 0;
     margin-bottom: 5%;
     img {
       display: inline;
       border-radius: 100%;
     }
     h2 {
-      padding: 15px 0;
+      padding: 0;
+      font-size: 18px;
+      opacity: 1;
+      color: #000;
+      margin: 1.5em 0 1em 0;
+
+      span {
+        color: #a0ce4e;
+        opacity: 1;
+      }
+    }
+    h4 {
+      margin: 0;
+      color: #000;
+      opacity: 1;
+      font-size: 14px;
     }
     p {
       padding: 4% 5% 6%;
       text-align: left;
       line-height: 1.5;
+      font-size: 12px;
     }
   }
 }

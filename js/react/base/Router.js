@@ -14,7 +14,16 @@ import Layout from './Layout';
 
 import AdminAccess  from './AdminAccess';
 
-export const routes = [ 
+export const routes = [
+  {
+    path: '/',
+    name: 'landing-page',
+    menuName: 'Home',
+    admin: false,
+    menu: true,
+    id: 'home',
+    component: m.FrontPage
+  },
   {
     path: '/about',
     name: 'about',

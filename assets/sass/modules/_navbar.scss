@@ -1,5 +1,5 @@
 .navbar {
-  @include layout(12 fluid 0.35 float inside);
+  @include layout(12 fluid 0 float inside);
   border-bottom: 1px solid #e6e6e6;
   line-height: 1.8;
   @include clearfix;
@@ -10,14 +10,14 @@
   z-index: 1000;
   margin: 0;
   padding: 0;
-  
+  &--wrapper {
+    @include squish(1);
+  }
 
   &--brand {
     @include span(4);
 
-    padding-top: 27px;
-    padding-bottom: 21px;
-    text-align: center;
+    padding: 30px 0;
 
 
     > a {
@@ -38,28 +38,30 @@
         display: table-cell;
         font-size: 0;
         a {
-          color: #999;
-          padding: 27px 37px;
+          color: #000;
+          padding: 30px 20px;
           font-family: Roboto;
           border: none;
+          line-height: 2.2;
 
           &:hover,
           &:active,
           &:focus,
-          .active {
-            color: rgba(77, 77, 77, 0.8);
+          &.active {
+            color: #a0ce4e;
           }
 
           &:active {
-            opacity: 0.8;
+            color: #a0ce4e;
           }
         }
       }
       li.magic-line {
         position: absolute;
-        border-bottom: 4px solid #9dbe68;
-        transition:all 0.3s ease;
+        border-bottom: 4px solid #a0ce4e;
+        transition:all 0.2s ease;
         left: 0;
+        bottom: 0;
         }
     }
   }
@@ -75,7 +77,6 @@
     }
     &--menu {
       @include span(12);
-      @include gutters(0%);
       position: relative;
       ul {
         float: none;
