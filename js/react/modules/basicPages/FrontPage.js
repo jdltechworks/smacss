@@ -74,10 +74,11 @@ export default class FrontPage extends React.Component {
 	    		</p>
 	    	</div>
 	    </div>
-	    <div className="inquiry-banner">
+	    <div className="banner--inquiry">
 	    	<div className="inner">
 	    		<div className="col-8">
 	    			<h2>Want a modern website using the latest platform?</h2>
+	    			<p>Curabitur nunc orci, aliquet vitae odio eu, euismod consequat ipsum. Nam urna leo, dignissim quis risus ut, consequat mollis erat.</p>
 	    		</div>
 	    		<div className="col-4">
 	    			<a href="#" onClick={toScroll.bind(this, 'contact')}>CONTACT US NOW</a>

@@ -1,0 +1,53 @@
+.banner {
+	&--inquiry {
+		.inner {
+			position: relative;
+			@include squish(1);
+			padding: 5% 0;
+
+			.col-4 {
+				text-align: center;
+				line-height: 8;
+			}
+		}
+		background: #a0ce4e;
+		h2, p {
+			color: #fff;
+			font-family: Arimo;
+			letter-spacing: 2px;
+		}
+		p {
+			font-size: 16px;
+		}
+		a {
+	    display: inline-block;
+	    padding: 15px 16px;
+	    background: #a0ce4e;
+	    color: #fff;
+	    text-transform: uppercase;
+	    border-radius: 5px;
+	    border: 2px solid #fff;
+	    font-size: 18px;
+	    &:hover {
+	    	opacity: 1;
+	    	color: #a0ce4e;
+	    	border: 1px solid #a0ce4e;
+	    	background: #fff;
+	    }
+		}
+		&:after {
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-width: 36px;
+			border-top-color: #a0ce4e;
+			top: 100%;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+		}
+	}
+}
