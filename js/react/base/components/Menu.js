@@ -25,10 +25,13 @@ export default class Menu extends React.Component {
 			let el = document.getElementById(collection.name);
 			if(_.gte(_.round(window.pageYOffset), el.offsetTop - 90)) {
 				let link = document.querySelector(`a.${collection.name}`);
+				$('.navbar--menu ul li a').removeClass('active');
+				link.classList.add('active');
 				document.querySelector('li.magic-line').style.left = link.offsetLeft + 'px'; 
 				document.querySelector('li.magic-line').style.width = link.offsetWidth + 'px';
 			}
 		}
+
 
 	}
 	render() {
@@ -59,8 +62,6 @@ export default class Menu extends React.Component {
 
 export const	toScroll = (content, e) => {
 	e.preventDefault();
-	$(`.navbar--menu ul li a`).removeClass('active');
-	$(`.${content}`).addClass('active');
 	let targetY = document.getElementById(content).offsetTop - 89;
 	$('html,body').animate({
 	  scrollTop: targetY
