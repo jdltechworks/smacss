@@ -8,14 +8,6 @@ export default class Menu extends React.Component {
 		publicMenu: React.PropTypes.array
 	}
 	componentDidMount() {
-		document
-			.querySelector('li.magic-line')
-				.style.left 
-					= document.getElementById('home').offsetLeft + 'px';
-		document
-			.querySelector('li.magic-line')
-				.style.width 
-					= document.getElementById('home').offsetWidth + 'px';
 		window.onscroll = this.scrollListener.bind(this);
 	}
 	scrollListener(e) {
@@ -43,6 +35,7 @@ export default class Menu extends React.Component {
 	        	<div className="navbar--wrapper">
 		          <div class="navbar--brand">
 		            <Link to="/"><img src="/img/logo.png" alt="JDLtechworks Logo" /></Link>
+		            <a href="#" className="navbar--mobile-nav" onClick={_toggleMenu.bind(this)}><i className="fa fa-bars fa-2"></i></a>
 		          </div>
 		          <div class="navbar--menu">
 		            <ul>
@@ -60,8 +53,15 @@ export default class Menu extends React.Component {
 	}
 }
 
+const _toggleMenu = (e) => {
+	$('.navbar--menu').slideToggle();
+};
+
 export const	toScroll = (content, e) => {
 	e.preventDefault();
+	let isMobile = /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+	console.log(document.body.offsetWidth);
+	document.body.offsetWidth < 724 ? $('.navbar--menu').slideUp() : null;
 	let targetY = document.getElementById(content).offsetTop - 89;
 	$('html,body').animate({
 	  scrollTop: targetY

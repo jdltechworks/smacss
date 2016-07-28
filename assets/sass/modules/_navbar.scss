@@ -12,6 +12,9 @@
   padding: 0;
   &--wrapper {
     @include squish(1);
+    @include mq($max-width: 724px) {
+      @include squish(0);
+    }
   }
 
   &--brand {
@@ -25,7 +28,9 @@
       display: inline-table;
     }
   }
-
+  &--mobile-nav {
+    display: none !important;
+  }
   &--menu {
     @include span(8);
     padding: 0;
@@ -67,13 +72,26 @@
 
 @include mq($max-width: 724px) {
   .navbar {
-    position: inherit;
+    position: fixed;
     &--brand {
       @include span(12);
       text-align: left;
       border-bottom: 1px solid #e6e6e6;
+      padding: 14px 0;
+      a:first-child {
+        padding-top: 8px;
+      } 
+    }
+    
+    &--mobile-nav {
+      display: block !important;
+      text-align: right;
+      float: right;
+      padding-right: 20px;
+      font-size: 18px;
     }
     &--menu {
+      display: none;
       @include span(12);
       position: relative;
       ul {
@@ -81,6 +99,9 @@
         > li:not(.magic-line) {
           display: block;
           border-bottom: 1px solid #e6e6e6;
+          a {
+            padding: 10px 20px;
+          }
         }
         li.magic-line {
           display: none;
