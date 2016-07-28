@@ -54,13 +54,13 @@ export default class Menu extends React.Component {
 }
 
 const _toggleMenu = (e) => {
-	$('.navbar--menu').slideToggle();
+	e.preventDefault();
+	$('.navbar--menu').slideToggle('fast');
 };
 
 export const	toScroll = (content, e) => {
 	e.preventDefault();
 	let isMobile = /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-	console.log(document.body.offsetWidth);
 	document.body.offsetWidth <= 724 ? $('.navbar--menu').slideUp() : null;
 	let targetY = document.getElementById(content).offsetTop - 89;
 	$('html,body').animate({
