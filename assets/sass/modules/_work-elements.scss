@@ -10,6 +10,9 @@
     position: relative;
     &-inner {
       @include squish(4);
+      @include mq($max-width: 970px) {
+        @include squish(1);
+      }
       @include mq($max-width: 768px) {
         @include squish(1);
       }
@@ -40,6 +43,10 @@
   }
 	&-inner {
 		@include squish(1);
+		@include mq($min-width: 1367px) {
+			max-width: 1200px;
+			margin: auto;
+		}
 		@include clearfix;
 		.col-4 {
 			@include mq($max-width: 899px) {

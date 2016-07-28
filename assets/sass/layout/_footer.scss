@@ -9,8 +9,11 @@
 
   .inner {
     background: #282828;
+    @include mq($min-width: 1367px) {
+        max-width: 1200px;
+        margin: 0 auto;      
+    }
   }
-
   &--cols4 {
     padding-top: 45px;
     @include span(4);
@@ -57,4 +60,13 @@
       font-size: 13px;
     }
   }
+  @include mq($min-width: 1367px) {
+
+    &--social-icons {
+      .social--icons {
+        text-align: right;
+      }
+    }    
+  }
+
 }

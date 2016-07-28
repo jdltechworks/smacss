@@ -2,7 +2,7 @@
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -140px;
+  margin: 0 auto 0;
   @include mq($max-width: 980px) {
   	margin: 0 auto 0;
   }

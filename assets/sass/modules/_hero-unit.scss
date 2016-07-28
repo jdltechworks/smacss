@@ -14,6 +14,9 @@
     @include mq($max-width: 724px) {
       padding: 3% 0 15%;
     }
+    @include mq($max-width: 690px) {
+      padding: 3% 0 7%;
+    }
   }
   &-btn {
     padding: 5px 25px;

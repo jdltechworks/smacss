@@ -9,11 +9,18 @@
 	padding-bottom: 5%;
 	position: relative;
 	padding-left: 7em;
+	@include mq($max-width: 689px) {
+		padding-left: 0;
+		padding-right: 0;
+	}
 	i {
 		position: absolute;
 		font-size: 4rem;
 		left: 0;
 		color: #a0ce4e;
+		@include mq($max-width: 689px) {
+			position: inherit;
+		}
 	}
 	h2 {
 		margin-bottom: 1.7em;
@@ -22,5 +29,9 @@
 		span {
 			color: #a0ce4e;
 		}
+	}
+	@include mq($max-width: 689px) {
+		padding: 2.5em 0 1.5em;
+		text-align: center;
 	}
 }

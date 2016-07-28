@@ -12,6 +12,10 @@
   padding: 0;
   &--wrapper {
     @include squish(1);
+    @include mq($min-width: 1366px) {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
     @include mq($max-width: 724px) {
       @include squish(0);
     }

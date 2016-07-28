@@ -48,12 +48,15 @@
 
   &--inner {
     @include squish(1);
+    @include mq($min-width: 1367px) {
+      width: 1200px;
+      margin: 0 auto 0 auto;
+    }
+   
 
     background: #fff;
 
     @include clearfix;
-
-    margin-bottom: 15%;
   }
 
   &--banner {

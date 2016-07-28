@@ -1,8 +1,14 @@
 .banner {
 	&--inquiry {
 		.inner {
-			position: relative;
 			@include squish(1);
+			@include mq($min-width: 1367px) {
+				max-width: 1200px;
+				margin: 0 auto;				
+			}
+
+			position: relative;
+			
 			padding: 5% 0;
 
 			.col-4 {
