@@ -2,6 +2,12 @@
   @include layout(12 0 fluid float inside);
   .team--member {
     @include span(3);
+    @include mq($max-width: 899px) {
+      @include span(6);
+    }
+    @include mq($max-width: 768px) {
+      @include span(12);
+    }
     @include clearfix;
     box-sizing: border-box;
     float: left;

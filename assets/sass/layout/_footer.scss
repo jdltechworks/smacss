@@ -13,13 +13,17 @@
 
   &--cols4 {
     padding-top: 45px;
-
     @include span(4);
+    @include mq($max-width: 768px) {
+      @include span(12);
+      &:not(:first-child) { padding-top: 0; }
+      padding-bottom: 1em;
+    }
   }
 
   &--branding {
     text-align: center;
-    margin-bottom: 15px;
+    margin: 0 15px 15px;
     img {
       display: inline;
     }

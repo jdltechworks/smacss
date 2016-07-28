@@ -36,8 +36,12 @@ export default class FrontPage extends React.Component {
           transitionAppear={true}
         >
 	    <div className="work-elements-inner clearfix">
-	    <center><h2 className="work-elements-header">HOW <span>WE WORK</span></h2></center>
-	    	<div class="col-3">
+		    <div className="work-elements--headings">
+		    	<div className="work-elements--headings-inner">
+		    		<h2>HOW <span>WE WORK</span></h2>
+		    	</div>
+		    </div>
+	    	<div class="col-4">
 	    		<center>
 		    		<h2>
 		    			<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
@@ -48,7 +52,7 @@ export default class FrontPage extends React.Component {
 	    			Check your business model and use the very best materials and marketing strategies for your web or mobile app.
 	    		</p>
 	    	</div>
-	    	<div class="col-3">
+	    	<div class="col-4">
 	    		<center>
 		    		<h2>
 		    			<i class="fa fa-wrench" aria-hidden="true"></i>
@@ -61,7 +65,7 @@ export default class FrontPage extends React.Component {
 	    		</p>
 	    	</div>
 
-	    	<div class="col-3">
+	    	<div class="col-4">
 	    		<center>
 		    		<h2>
 		    			<i class="fa fa-rocket" aria-hidden="true"></i>

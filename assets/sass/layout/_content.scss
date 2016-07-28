@@ -11,19 +11,31 @@
     text-align: center;
     position: relative;
     &-inner {
-      @include squish(1);
+      @include squish(4);
+      @include mq($max-width: 768px) {
+        @include squish(1);
+      }
+      @include mq($max-width: 690px) {
+        @include squish(2);
+      }
       h2 {
         color: #000;
         letter-spacing: 10px;
-        width: 15em;
         border-top: 1px solid #e6e6e6;
         border-bottom: 1px solid #e6e6e6;
         text-transform: uppercase;
         padding: 1em 0;
         margin: 0 auto;
+        line-height: 1.5;
         span {
           color: #a0ce4e;
           opacity: 1;
+        }
+        @include mq($max-width: 690px) {
+          font-size: 24px;
+        }
+        @include mq($max-width: 582px) {
+          @include squish(0);
         }
       }
     }
@@ -106,7 +118,7 @@
       left: 0;
       right: 0;
       margin: 0 auto;
-      top: 99%;
+      bottom: -10px;
       background: #fff;
     }
   }

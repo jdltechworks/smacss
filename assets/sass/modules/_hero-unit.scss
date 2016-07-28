@@ -7,8 +7,13 @@
     background: url("../img/hero/hero-landing.png") no-repeat fixed center top transparent;
     padding: 13% 0 15%;
     background-size: 100% 100%;
-
     @include clearfix;
+    @include mq($max-width: 899px) {
+      padding: 6% 0 15%;
+    }
+    @include mq($max-width: 724px) {
+      padding: 3% 0 15%;
+    }
   }
   &-btn {
     padding: 5px 25px;
@@ -17,7 +22,10 @@
     text-transform: uppercase;
     display: inline-table;
     font-size: 20px;
-    border-radius: 5px; 
+    border-radius: 5px;
+    @include mq($max-width: 899px) {
+      font-size: 16px;
+    }
   }
   & h1 {
     font-family: orbitronMedium;
@@ -26,6 +34,12 @@
     font-size: 40px;
     text-align: center;
     margin: 4% 0 2.5%;
+    @include mq($max-width: 899px) {
+      font-size: 30px;
+    }
+    @include mq($max-width: 724px) {
+      font-size: 24px;
+    }
 
     span.slash {
       color: #a0ce4e;
@@ -39,6 +53,12 @@
     text-align: center;
     color: #fff;
     margin-bottom: 1.5em;
+    @include mq($max-width: 899px) {
+      font-size: 24px;
+    }
+    @include mq($max-width: 724px) {
+      font-size: 20px;
+    }
   }
 
   &--icon-container {

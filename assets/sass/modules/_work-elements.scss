@@ -3,29 +3,50 @@
 	@include clearfix;
 	position: relative;
 	margin-bottom: 0;
-	&-header {
-		width: 15em;
-		border-top: 1px solid #e6e6e6;
-		border-bottom: 1px solid #e6e6e6;
-		padding: 1em 0;
-	}
+  &--headings {
+    padding: 10% 2% 5%;
+    margin-bottom: 0;
+    text-align: center;
+    position: relative;
+    &-inner {
+      @include squish(4);
+      @include mq($max-width: 768px) {
+        @include squish(1);
+      }
+      @include mq($max-width: 690px) {
+        @include squish(2);
+      }
+      h2 {
+        color: #000;
+        letter-spacing: 10px;
+        border-top: 1px solid #e6e6e6;
+        border-bottom: 1px solid #e6e6e6;
+        text-transform: uppercase;
+        padding: 1em 0;
+        margin: 0 auto;
+        line-height: 1.5;
+        span {
+          color: #a0ce4e;
+          opacity: 1;
+        }
+        @include mq($max-width: 690px) {
+          font-size: 24px;
+        }
+        @include mq($max-width: 582px) {
+        	@include squish(0);
+        }
+      }
+    }
+  }
 	&-inner {
-		@include clearfix;
 		@include squish(1);
-		center {
-			h2 {
-		    font-family: OpenSansRegular;
-		    color: #000;
-		    letter-spacing: 2px;
-		    font-size: 30px;
-		    margin: 4em auto 4.5em;
-		    span {
-		    	color: #a0ce4e;
-		    }
+		@include clearfix;
+		.col-4 {
+			@include mq($max-width: 899px) {
+				p { 
+					text-align: center; 
+				}
 			}
-		}
-		.col-3 {
-			@include span(4);
 			padding: 40px 25px 50px;
 			font-family: Roboto Regular;
 			h2 {

@@ -6,3 +6,27 @@
 		}
 	}
 }
+
+@include mq($max-width: 899px) {
+	.col-4 {
+		@include span(12);
+	}
+	.col-8 {
+		@include span(6);
+		+ .col-4 {
+			@include span(6);
+		}
+	}
+	.col-6 {
+		@include span(12);
+	}
+}
+
+@include mq($max-width: 724px) {
+		.col-8 {
+		@include span(12);
+		+ .col-4 {
+			@include span(12);
+		}
+	}
+}
