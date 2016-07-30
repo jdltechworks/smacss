@@ -26,6 +26,12 @@ const muiTheme = getMuiTheme({
 });
 
 export default class Layout extends React.Component {
+	static childContextTypes = {
+		onScrollActive: React.PropTypes.func
+	};
+	constructor(props) {
+		super(props);
+	}
 	render() {
 		let { props } = this;
 		return (

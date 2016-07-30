@@ -5,8 +5,8 @@ import _ from 'lodash';
 
 export default class Menu extends React.Component {
 	static contextTypes = {
-		publicMenu: React.PropTypes.array
-	}
+		publicMenu: React.PropTypes.array,
+	};
 	componentDidMount() {
 		window.onscroll = this.scrollListener.bind(this);
 	}
@@ -23,8 +23,6 @@ export default class Menu extends React.Component {
 				document.querySelector('li.magic-line').style.width = link.offsetWidth + 'px';
 			}
 		}
-
-
 	}
 	render() {
 		let { publicMenu } = this.context;

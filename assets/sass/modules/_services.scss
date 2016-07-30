@@ -8,7 +8,7 @@
 	padding-right: 2.5%;
 	padding-bottom: 5%;
 	position: relative;
-	padding-left: 7em;
+	padding-left: 5.5em;
 	@include mq($max-width: 689px) {
 		padding-left: 0;
 		padding-right: 0;
@@ -33,5 +33,8 @@
 	@include mq($max-width: 689px) {
 		padding: 2.5em 0 1.5em;
 		text-align: center;
+		p {
+			text-align: justify;
+		}
 	}
 }
