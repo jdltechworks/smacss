@@ -1,5 +1,5 @@
 @mixin font-face($style-name, $file, $family, $category: "") {
-  $filepath: "/fonts/" + $family + "/" + $file;
+  $filepath: "../fonts/" + $family + "/" + $file;
 
   @font-face {
     font-family: #{$style-name};
@@ -22,20 +22,16 @@
 
 @include font-face(openSansRegular, opensans-regular-webfont, opensans);
 
-@include font-face(openSansBold, opensans_bold, openSansBold);
+@include font-face(openSansBold, open_sansbold, opensans);
 
 @include font-face(orbitronMedium, orbitron-medium-webfont, orbitron);
 
 @include font-face(quickSandRegular, quicksand-regular-webfont, quicksand);
-
-@include font-face(Roboto Regular, roboto-regular-webfont, roboto);
 
 @include font-face(Roboto, roboto-regular-webfont, roboto);
 
 @include font-face(Roboto Medium, roboto-medium-webfont, roboto);
 
 @include font-face(FontAwesome, fontawesome-webfont, fontawesome);
-
-@include font-face('Simple-Line-Icons', Simple-Line-Icons, Simple-Line-Icons);
 
 @include font-face(Arimo , Arimo, arimo);
