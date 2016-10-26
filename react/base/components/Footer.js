@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import footerLogo from '../../../assets/img/footer-logo.png';
 
 export default class Footer extends React.Component {
 	render() {
@@ -7,7 +8,7 @@ export default class Footer extends React.Component {
 		  <div className="inner">
 		    <div className="footer--cols4">
 		      <div className="footer--branding">
-		        <a href="#"><img src="/img/footer-logo.png" alt="Footer Logo" /></a>
+		        <a href="#"><img src={footerLogo} alt="Footer Logo" /></a>
 		        <p className="copyright">&copy; Copyright 2016. JDLtechworks all rights reserved</p>
 		      </div>
 		    </div>

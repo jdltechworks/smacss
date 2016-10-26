@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-export default class About extends React.Component {
+import joboy from '../../../assets/img/staff/joboy.jpg';
+import jose from '../../../assets/img/staff/jose.jpg';
+import landas from '../../../assets/img/staff/landas.jpg';
+import neil from '../../../assets/img/staff/neil.jpg';
+export default class About extends Component {
 	render() {
 		return (
       <section id="about" className="main about">
@@ -21,7 +25,7 @@ export default class About extends React.Component {
         >
           <div className="team--container">
             <div className="team--member">
-              <img src="/img/staffs/landas.jpg" />
+              <img src={landas} />
               <h2>Michael <span>Landas</span></h2>
               <h4>WEB/UI/UX Designer</h4>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
@@ -32,7 +36,7 @@ export default class About extends React.Component {
               </ul>
             </div>
             <div className="team--member">
-              <img src="/img/staffs/joboy.jpg" />
+              <img src={joboy} />
               <h2>Jose Maria <span>Jocom</span></h2>
               <h4>Project Manager</h4>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
@@ -43,7 +47,7 @@ export default class About extends React.Component {
               </ul>
             </div>
             <div className="team--member">
-              <img src="/img/staffs/jose.jpg" />
+              <img src={jose} />
               <h2>Jose <span>Lo Jr.</span></h2>
               <h4>Full Stack Developer</h4>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
@@ -54,7 +58,7 @@ export default class About extends React.Component {
               </ul>
             </div>
             <div className="team--member">
-              <img src="/img/staffs/neil.jpg" />
+              <img src={neil} />
               <h2>Neil John <span>Gonzaga</span></h2>
               <h4>Full Stack Developer</h4>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
