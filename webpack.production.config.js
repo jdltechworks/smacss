@@ -32,7 +32,7 @@ module.exports = {
       },
       {
         test: /\.(otf|eot|svg|ttf|woff|woff2)/,
-        loader: 'file-loader?name=fonts/[name]/[name].[ext]'
+        loader: 'file-loader?name=fonts/[hash].[ext]'
       },{
         test: /\.htaccess/,
         loader: 'file-loader?name=[name]'
