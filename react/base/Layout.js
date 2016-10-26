@@ -8,6 +8,7 @@ import FrontPage from '../modules/basicPages/FrontPage';
 import About from '../modules/basicPages/About';
 import Services from '../modules/basicPages/Services';
 import Contact from '../modules/basicPages/Contact';
+import injectTapEventPlugin from 'react-tap-event-plugin';
 
 const muiTheme = getMuiTheme({
   palette: {
@@ -22,11 +23,9 @@ const muiTheme = getMuiTheme({
 });
 
 export default class Layout extends React.Component {
-	static childContextTypes = {
-		onScrollActive: React.PropTypes.func
-	};
 	constructor(props) {
 		super(props);
+    injectTapEventPlugin();
 	}
 	render() {
 		let { props } = this;
